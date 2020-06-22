@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 export const MenuWrapper = styled.div`
-  background-color: #003D1D;
+  background-color: #fff010;
   height: 80px;
   width: 100vw;
 `
