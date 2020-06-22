@@ -14,6 +14,9 @@ const Header = () => {
         <MenuItem>
           <MenuLink to='/about'>About</MenuLink>
         </MenuItem>
+        <MenuItem>
+          <MenuLink to='/about'>Contato</MenuLink>
+        </MenuItem>
       </MenuGroup>
     </MenuWrapper>
   )
