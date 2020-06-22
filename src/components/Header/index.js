@@ -17,6 +17,9 @@ const Header = () => {
         <MenuItem>
           <MenuLink to='/about'>Contato</MenuLink>
         </MenuItem>
+        <MenuItem>
+          <MenuLink to='/Laureba'>Laurebinha</MenuLink>
+        </MenuItem>
       </MenuGroup>
     </MenuWrapper>
   )
