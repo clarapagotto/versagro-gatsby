@@ -22,7 +22,7 @@ export const MenuGroup = styled.ul`
 `
 
 export const MenuItem = styled.li`
-  padding: 0 2px 0 2px; 
+  padding: 0 2px 0 2px;
   list-style: none;
 `
 

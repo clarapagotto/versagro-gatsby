@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Versagro Website Lauro&Clara`,
+    title: `Versagro Website`,
     description: `Lauro&Clara Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@Lauro&Clara`,
   },
