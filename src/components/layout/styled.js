@@ -6,6 +6,8 @@ export const LayoutWrapper = styled.div`
   `
 
 export const LayoutMain = styled.main`
-  background-color: tomato;
+  background-color: #EEE;
   width: 100%;
+
+  height: 400px;
  `

@@ -19,16 +19,20 @@ export const MenuGroup = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
+  /* background-color: blue;
+  flex: 1; */
 `
 
 export const MenuItem = styled.li`
   padding: 0 2px 0 2px; 
   list-style: none;
+
+  /* background-color: pink;
+  border: 1px solid #fff; */
 `
 
 export const MenuLink = styled(Link)`
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
   font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -51,7 +55,6 @@ export const MenuLink = styled(Link)`
 `
 
 export const LogoLink = styled(Link)`
-  /* background-color: pink; */
   padding-top: 15px;
   width: 262px;
   height: 77px;
