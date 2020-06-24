@@ -45,6 +45,8 @@ const GlobalStyles = createGlobalStyle`
     border-spacing: 0;
   }
   body {
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
     font-family: "Roboto", sans-serif;
   }
