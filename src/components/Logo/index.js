@@ -7,9 +7,9 @@ const Logo = () => {
   const { logoImage } = useStaticQuery(
     graphql`
       query {
-        logoImage: file(relativePath: { eq: "logo.png" }) {
+        logoImage: file(relativePath: { eq: "Versagro-logo.png" }) {
           childImageSharp {
-            fixed (width: 262, height: 77) {
+            fixed (width: 172, height: 40) {
               ...GatsbyImageSharpFixed_tracedSVG
             }
           }

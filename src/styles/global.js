@@ -45,7 +45,8 @@ const GlobalStyles = createGlobalStyle`
     border-spacing: 0;
   }
   body {
-    background-color: aliceblue;
+    @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    font-family: "Roboto", sans-serif;
   }
 `
 
