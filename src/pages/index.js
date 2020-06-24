@@ -9,15 +9,6 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
     <SolutionsHome />
-    <p>Welcome to your new Gatsby site.</p>
-    <ul>
-      <li>
-       <Link to="/about" activeStyle={{color: 'red'}}>Vai para about</Link>
-      </li>
-      <li>
-        <Link to="/" activeStyle={{color: 'red'}}>Home</Link>
-      </li>
-    </ul>
   </Layout>
 )
 
