@@ -5,8 +5,7 @@ import Layout from '../components/layout'
 const AboutPage = () => {
   return (
     <Layout>
-      <h1> About Page </h1>
-      <Link to="/" activeStyle={{color: 'red'}}>Vai para home</Link>
+      <h1> A Versagro </h1>
     </Layout>
   )
 }

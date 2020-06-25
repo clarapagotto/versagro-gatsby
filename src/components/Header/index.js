@@ -14,7 +14,7 @@ const Header = () => {
             <MenuLink to="/" activeClassName="active" >Início</MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink to="/about" activeClassName="active" >A Versagro</MenuLink>
+            <MenuLink to="/a-versagro" activeClassName="active" >A Versagro</MenuLink>
           </MenuItem>
           <MenuItem>
             <MenuLink to="/solucoes" activeClassName="active" >Soluções</MenuLink>

@@ -11,9 +11,9 @@ const SolutionsHome = () => {
       <S.SolutionsHomeContainer>
         <S.Title>Soluções</S.Title>
         <S.SolutionsCard>
-          <S.ImageCardLeft>
+          <S.ImageCard>
             <CoffeeImage />
-          </S.ImageCardLeft>
+          </S.ImageCard>
           <S.CardContent>
             <S.CardTitle>Capacitação de produtores</S.CardTitle>
             <S.CardDescription>
@@ -23,7 +23,7 @@ const SolutionsHome = () => {
               purus vitae justo consectetur commodo. Donec ultrices eros ac
               ligula mattis scelerisque.
             </S.CardDescription>
-            <S.CardButton to="/about">Solicite um orçamento</S.CardButton>
+            <S.CardButton to="/contato">Solicite um orçamento</S.CardButton>
           </S.CardContent>
         </S.SolutionsCard>
         <S.SolutionsCard>
@@ -36,16 +36,16 @@ const SolutionsHome = () => {
               purus vitae justo consectetur commodo. Donec ultrices eros ac
               ligula mattis scelerisque.
             </S.CardDescription>
-            <S.CardButton to="/about">Solicite um orçamento</S.CardButton>
+            <S.CardButton to="/contato">Solicite um orçamento</S.CardButton>
           </S.CardContent>
-          <S.ImageCardRight>
+          <S.ImageCard flip="horizontal">
             <CornImage />
-          </S.ImageCardRight>
+          </S.ImageCard>
         </S.SolutionsCard>
         <S.SolutionsCard>
-          <S.ImageCardLeft>
+          <S.ImageCard>
             <AgricuturalMachineImage />
-          </S.ImageCardLeft>
+          </S.ImageCard>
           <S.CardContent>
             <S.CardTitle>Consultoria técnica</S.CardTitle>
             <S.CardDescription>
@@ -55,10 +55,10 @@ const SolutionsHome = () => {
               purus vitae justo consectetur commodo. Donec ultrices eros ac
               ligula mattis scelerisque.
             </S.CardDescription>
-            <S.CardButton to="/about">Solicite um orçamento</S.CardButton>
+            <S.CardButton to="/contato">Solicite um orçamento</S.CardButton>
           </S.CardContent>
         </S.SolutionsCard>
-        <S.SeeMoreButton to="/about">Veja Mais</S.SeeMoreButton>
+        <S.SeeMoreButton to="/solucoes">Veja Mais</S.SeeMoreButton>
       </S.SolutionsHomeContainer>
     </S.SolutionsHomeWrapper>
   )
