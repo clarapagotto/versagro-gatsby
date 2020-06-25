@@ -2,6 +2,8 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const MenuWrapper = styled.div`
+  position: fixed;
+  z-index: 1;
   background-color: #003d1d;
   height: 70px;
   width: 100vw;
