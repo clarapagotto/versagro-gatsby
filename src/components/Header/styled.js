@@ -1,12 +1,21 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
 export const MenuWrapper = styled.div`
   position: fixed;
   z-index: 1;
   background-color: #003d1d;
-  height: 70px;
+  height: 67px;
+  transition: 2s;
   width: 100vw;
+
+  ${props =>
+    props.scroll === 200 &&
+    css`
+      background-color: #9cb2a7;
+      transition: 2s;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    `}
 `
 
 export const MenuContainer = styled.div`

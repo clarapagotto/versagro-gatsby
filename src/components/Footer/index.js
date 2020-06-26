@@ -18,7 +18,7 @@ const Footer = () => {
             <S.LinksGroup>
               <S.LinksList>
                 <S.LinkItem>
-                  <S.FooterLink to="/about" style={{ fontWeight: "bold" }}>
+                  <S.FooterLink to="/a-versagro" style={{ fontWeight: "bold" }}>
                     A Versagro
                   </S.FooterLink>
                 </S.LinkItem>
