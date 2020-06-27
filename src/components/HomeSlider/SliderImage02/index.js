@@ -11,7 +11,7 @@ const SliderImage02 = () => {
           relativePath: { eq: "slider-02.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1440, maxHeight: 600) {
+            fluid(maxWidth: 1300, maxHeight: 600) {
               ...GatsbyImageSharpFluid
             }
           }

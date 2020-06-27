@@ -13,7 +13,10 @@ class Header extends Component {
   state = { scroll: 0 };
 
   componentDidMount() {
-    window.onscroll = () => this.handleScroll()
+    window.onscroll = () => {
+      console.log('roi')
+      this.handleScroll()
+    }
   }
 
   handleScroll() {
