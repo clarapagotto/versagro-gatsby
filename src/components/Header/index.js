@@ -17,9 +17,9 @@ class Header extends Component {
   }
 
   handleScroll() {
-    if (document.documentElement.scrollTop > 200) {
+    if (document.documentElement.scrollTop > 0) {
       this.setState({
-        scroll: 200,
+        scroll: document.documentElement.scrollTop,
       })
     } else {
       this.setState({

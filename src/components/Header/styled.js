@@ -3,25 +3,36 @@ import { Link } from "gatsby"
 
 export const MenuWrapper = styled.div`
   position: fixed;
+  display: flex;
+  align-items: center;
   z-index: 1;
-  background-color: #003d1d;
-  height: 67px;
-  transition: 2s;
+  background-color: transparent;
+  height: 100px;
   width: 100vw;
 
   ${props =>
-    props.scroll === 200 &&
+    props.scroll > 0 &&
     css`
-      background-color: #9cb2a7;
-      transition: 2s;
+      background-color: rgba(102, 139, 119, ${props.scroll * (1 / 400)});
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    `}
+
+  ${props =>
+    props.scroll < 200 &&
+    css`
+      height: calc(100px - ${props.scroll * (40 / 200)}px);
+    `}
+
+  ${props =>
+    props.scroll >= 200 &&
+    css`
+      height: 60px;
     `}
 `
 
 export const MenuContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  height: 80px;
   width: 80%;
   margin: 2px auto;
 `
@@ -30,7 +41,7 @@ export const MenuGroup = styled.ul`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   /* background-color: blue;
   flex: 1; */
 `
@@ -51,7 +62,7 @@ export const MenuLink = styled(Link)`
   text-align: center;
   letter-spacing: 2px;
 
-  padding: 13px 30px;
+  padding: 18px 30px;
   color: white;
   text-decoration: none;
 
@@ -66,7 +77,7 @@ export const MenuLink = styled(Link)`
 `
 
 export const LogoLink = styled(Link)`
-  padding-top: 15px;
+  padding-top: 40px;
   width: 262px;
   height: 77px;
 `
