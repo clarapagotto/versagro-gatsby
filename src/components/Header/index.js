@@ -59,6 +59,7 @@ function Header() {
             </MenuLink>
           </MenuItem>
           <MenuItem>
+
             <MenuLink to="/contato" activeClassName="active">
               Contato
             </MenuLink>
@@ -70,6 +71,8 @@ function Header() {
 
 
 }
+//test
+export default Header
 
 // class Header extends Component {
 //   state = { scroll: 0 };
@@ -138,4 +141,3 @@ function Header() {
 //   }
 // }
 
-export default Header
