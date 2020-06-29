@@ -1,9 +1,9 @@
 import React from "react"
 import * as S from "./styled"
 
-import AgricuturalMachineImage from "../AgricuturalMachineImage"
-import CoffeeImage from "../CoffeeImage"
-import CornImage from "../CornImage"
+import AgricuturalMachineImage from "./AgricuturalMachineImage"
+import CoffeeImage from "./CoffeeImage"
+import CornImage from "./CornImage"
 
 const SolutionsHome = () => {
   return (
@@ -58,7 +58,7 @@ const SolutionsHome = () => {
             <S.CardButton to="/contato">Solicite um orçamento</S.CardButton>
           </S.CardContent>
         </S.SolutionsCard>
-        <S.SeeMoreButton to="/solucoes">Veja Mais</S.SeeMoreButton>
+        <S.SeeMoreButton to="/solucoes">Veja mais Soluções</S.SeeMoreButton>
       </S.SolutionsHomeContainer>
     </S.SolutionsHomeWrapper>
   )
