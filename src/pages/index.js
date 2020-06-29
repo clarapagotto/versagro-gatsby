@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import SolutionsHome from "../components/Solutions"
+import DepoimentosHome from "../components/Depoimentos"
 
 import HomeSlider from "../components/HomeSlider"
 import { SliderWrapper } from "../components/HomeSlider/styled"
@@ -15,6 +16,7 @@ const IndexPage = () => (
       <HomeSlider />
     </SliderWrapper>
     <SolutionsHome />
+    <DepoimentosHome />    
   </Layout>
 )
 

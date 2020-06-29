@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export const SolutionsHomeWrapper = styled.div`
   background-color: #eef1f3;
-  height: 1482px;
+  height: 1000px;
   width: 100vw;
 `
 export const SolutionsHomeContainer = styled.div`
@@ -14,18 +14,6 @@ export const SolutionsHomeContainer = styled.div`
   padding-top: 20px;
   width: 80%;
 `
-
-export const SolutionsCard = styled.div`
-  align-items: center;
-  background: #ffffff;
-  border-radius: 20px;
-  box-shadow: 0 100px 5px -95px rgba(0, 0, 0, 0.05);
-  display: flex;
-  height: 250px;
-  justify-content: space-between;  
-  margin-top: 30px;
-`
-
 export const Title = styled.h1`
   @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
   color: #003d1d;
@@ -37,8 +25,20 @@ export const Title = styled.h1`
     content: "";
     border-bottom: 4px solid #003d1d;
     display: block;
+    padding-top: 5px;
     width: 50px;    
   }
+`
+
+export const SolutionsCard = styled.div`
+  align-items: center;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 100px 5px -95px rgba(0, 0, 0, 0.05);
+  display: flex;
+  height: 250px;
+  justify-content: space-between;  
+  margin-top: 30px;
 `
 
 export const ImageCard = styled.div`
