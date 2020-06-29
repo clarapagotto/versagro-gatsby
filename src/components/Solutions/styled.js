@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export const SolutionsHomeWrapper = styled.div`
   background-color: #eef1f3;
   height: 1000px;
-  width: 100vw;
+  width: 100%;
 `
 export const SolutionsHomeContainer = styled.div`
   display: flex;
