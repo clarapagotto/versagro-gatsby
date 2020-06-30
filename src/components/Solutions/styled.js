@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 export const SolutionsHomeWrapper = styled.div`
   background-color: #eef1f3;
   height: 1000px;
-  width: 100vw;
+  width: 100%;
 `
 export const SolutionsHomeContainer = styled.div`
   display: flex;
@@ -15,9 +15,9 @@ export const SolutionsHomeContainer = styled.div`
   width: 80%;
 `
 export const Title = styled.h1`
-  @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
   color: #003d1d;
-  font-family: "Fredoka One", cursive;
+  font-family: "Fredoka One", "Roboto", sans-serif;
   font-size: 32px;
   line-height: 40px;
 

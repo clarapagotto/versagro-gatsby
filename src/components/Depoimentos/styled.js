@@ -1,20 +1,23 @@
 import styled from "styled-components"
-import CornImage from "./CornImage"
+//import CornImage from "./CornImage"
+import cornImg from "../../images/corn.jpg"
 
 export const DepoimentosHomeWrapper = styled.div`
   background: linear-gradient(#eef1f3 50%, #fff 50%);
-  width: 100vw;
+  width: 100%;
+  background-color: pink;
 `
 export const DepoimentosHomeContainer = styled.div`
   background-color: #e8eaee;
-  background-image: url(${CornImage});
+  background-image: url(${cornImg});
   border-radius: 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
   padding: 20px 5%;
-  width: 80%;
+  width: 80%;   
+  
 `
 
 export const Title = styled.h1`
