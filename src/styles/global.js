@@ -51,8 +51,12 @@ const GlobalStyles = createGlobalStyle`
     @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
     font-family: "Roboto", sans-serif;
   }
+  .slick-slider {
+    overflow: hidden!important;
+  }
   /* * {
     outline: 1px solid red;
+    //
   } */
 `
 
