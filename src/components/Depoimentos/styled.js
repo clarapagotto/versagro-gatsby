@@ -5,7 +5,6 @@ import cornImg from "../../images/corn.jpg"
 export const DepoimentosHomeWrapper = styled.div`
   background: linear-gradient(#eef1f3 50%, #fff 50%);
   width: 100%;
-  background-color: pink;
 `
 export const DepoimentosHomeContainer = styled.div`
   background-color: #e8eaee;
