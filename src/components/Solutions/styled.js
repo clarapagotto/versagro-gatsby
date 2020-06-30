@@ -68,7 +68,7 @@ export const CardTitle = styled.h1`
 export const CardDescription = styled.p`
   color: #696969;
   font-size: 16px;
-  line-height: 23px;
+  line-height: 24px;
   text-align: justify;
 `
 export const CardButton = styled(Link)`
