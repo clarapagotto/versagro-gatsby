@@ -1,5 +1,6 @@
 import React from "react"
 import * as S from "./styled"
+import CornImage from "./CornImage/index"
 
 import MarkQuote from "./MarkQuote"
 import Avatar from "./Avatar"
@@ -11,6 +12,7 @@ const DepoimentosHome = () => {
         <S.Title>Depoimentos</S.Title>
         <S.DepoimentosHomeCardContainer>
           <S.DepoimentosHomeCard>
+<<<<<<< HEAD
             <S.CardAvatar><Avatar /></S.CardAvatar>
             <S.CardContent>
               <S.MarkQuote>
@@ -45,6 +47,12 @@ const DepoimentosHome = () => {
               </S.MarkQuote>
               <S.CardAuthor>Lorem ipsum dolor sit</S.CardAuthor>
             </S.CardContent>
+=======
+            <S.CardAvatar />
+          </S.DepoimentosHomeCard>
+          <S.DepoimentosHomeCard>
+            <S.CardAvatar />
+>>>>>>> da5ccb201b9c534e252a819570ad1a8f408c0ee8
           </S.DepoimentosHomeCard>
         </S.DepoimentosHomeCardContainer>
       </S.DepoimentosHomeContainer>

@@ -8,7 +8,7 @@ export const MenuWrapper = styled.div`
   z-index: 1;
   background-color: transparent;
   height: 100px;
-  width: 100vw;
+  width: 100%;
 
   ${props =>
     props.scroll > 0 &&

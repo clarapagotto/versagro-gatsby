@@ -48,8 +48,16 @@ const GlobalStyles = createGlobalStyle`
     @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
     @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
     font-family: "Roboto", sans-serif;
   }
+  .slick-slider {
+    overflow: hidden!important;
+  }
+  /* * {
+    outline: 1px solid red;
+    //
+  } */
 `
 
 export default GlobalStyles
