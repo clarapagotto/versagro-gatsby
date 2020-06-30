@@ -1,19 +1,21 @@
-import styled from "styled-components"
-import CornImage from "./CornImage"
+import styled, { css } from "styled-components"
+import CornImage from "../../images/sunset-field.jpg"
 
 export const DepoimentosHomeWrapper = styled.div`
   background: linear-gradient(#eef1f3 50%, #fff 50%);
   width: 100vw;
 `
 export const DepoimentosHomeContainer = styled.div`
-  background-color: #e8eaee;
-  background-image: url(${CornImage});
+  background-image: linear-gradient(to top, transparent 0%, #e8eaee 100%),
+    url(${CornImage});
+  background-position: center;
   border-radius: 50px;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding: 20px 5%;
+  padding: 50px 5%;
   width: 80%;
 `
 
@@ -41,18 +43,64 @@ export const DepoimentosHomeCardContainer = styled.div`
 `
 
 export const DepoimentosHomeCard = styled.div`
-  display: flex;
+  align-items: center;
   background-color: #fff;
   border-radius: 50px;
-  height: 100px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 10px 0 20px 0;
   width: 49%;
 `
 export const CardAvatar = styled.div`
-  background-color: pink;
+  align-items: center;
   border: 3px solid #003d1d;
   border-radius: 50px;
+  display: flex;
+  height: 60px;
+  padding: 2px;
+  position: relative;
+  top: 30px;
+  width: 60px;
+`
+export const CardContent = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const CardText = styled.p`
+  color: #696969;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 24px;
+  margin: 0 70px;
+  text-align: justify;
+`
+export const MarkQuote = styled.div`
   height: 50px;
-  padding: 10px;
-  width: 50px;
+  margin: 0 50px;
+
+  ${props =>
+    props.flip === "horizontal-vertical" &&
+    css`
+      -webkit-transform: scaleX(-1);
+      transform: rotate(180deg);
+    `}
+`
+export const CardReadMore = styled.a`
+  color: #003d1d;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 24px;
+  text-decoration: underline;
+`
+
+export const CardAuthor = styled.p`
+  color: #696969;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  margin: 0 70px;
+  position: relative;
+  top: -30px;
 `
