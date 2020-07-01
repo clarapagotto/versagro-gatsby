@@ -55,6 +55,9 @@ const GlobalStyles = createGlobalStyle`
 
   /* classes internas do slider */
   .slides {
+    /* .slide {
+      position: relative;
+    } */
     .slick-slider {
       overflow: hidden!important;
     }

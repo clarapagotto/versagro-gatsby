@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import {Link} from 'gatsby'
-
+import SliderImage01 from '../../images/slider-01.png'
 
 export const SliderWrapper = styled.div`
   height: 650px;
@@ -20,6 +20,22 @@ export const SliderDot = styled.div`
 `
 
 export const SliderLink = styled(Link)`
+`
 
-  
+export const SlideCaption = styled.div`
+  font-family: Raleway;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+`
+export const SlideCaptionContainer = styled.div`
+  background-color: orange;
+  width: 586px;
+  height: 250px;
+  top: 190px;
+  /* left: 18px; */
+  margin-left: 183px;
+
+  position: absolute;
+  z-index: 2;
 `

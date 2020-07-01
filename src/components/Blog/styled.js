@@ -54,7 +54,9 @@ export const ImageCard = styled.div`
 `
 
 export const CardContent = styled.div`
-  margin: 0 30px 0 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 30px;
 `
 
 export const CardTag = styled.p`
@@ -91,9 +93,9 @@ export const CardButton = styled(Link)`
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   margin-top: 20px;
-  left: calc(50% - 55px);
+  /* left: calc(50% - 55px); */
   padding: 12px 20px;
-  position: relative;
+  /* position: relative; */
   text-align: center;
   text-decoration: none;
   width: 110px;

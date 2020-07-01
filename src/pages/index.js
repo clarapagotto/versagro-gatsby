@@ -1,11 +1,11 @@
-import React from "react"
+ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import SolutionsHome from "../components/Solutions"
 import DepoimentosHome from "../components/Depoimentos"
-// import ContatoHome from "../components/Contato"
+import BlogHome from "../components/Blog"
 
 import HomeSlider from "../components/HomeSlider"
 import { SliderWrapper } from "../components/HomeSlider/styled"
@@ -17,8 +17,8 @@ const IndexPage = () => (
       <HomeSlider />
     </SliderWrapper>
     <SolutionsHome />
-    <DepoimentosHome />
-    {/* <ContatoHome /> */}
+    <DepoimentosHome /> 
+    <BlogHome />   
   </Layout>
 )
 
