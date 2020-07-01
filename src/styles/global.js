@@ -53,14 +53,38 @@ const GlobalStyles = createGlobalStyle`
     font-family: "Roboto", sans-serif;
   }
 
-  /* esconde o elemento do slider que causa o scroll horizontal */
-  .slick-slider {
-    overflow: hidden!important;
+  /* classes internas do slider */
+  .slides {
+    .slick-slider {
+      overflow: hidden!important;
+    }
+    .slick-dots {
+      /* position: static!important; */
+      bottom: 25px!important;
+    }
+    .slick-prev {
+      left: 3% !important;
+      z-index: 1;
+    }
+    .slick-next {
+      right: 3% !important;
+      z-index: 1;
+    }
+    li.slick-active div {
+      background-color: #B4A734!important;
+    } 
   }
 
   /* coloca borda em todos os elementos para ajudar a procurar o scroll horizontal */
   /* * {
     outline: 1px solid red; 
+  } */
+
+  /* :root {
+    font-size: calc(1vw + 1vh + .5vmin);
+  }
+  body {
+    font: 1rem/1.6 sans-serif;
   } */
 `
 
