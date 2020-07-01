@@ -1,10 +1,10 @@
 import styled, { css } from "styled-components"
+import { Link } from "gatsby"
 import SunsetField from "../../images/sunset-field.jpg"
 
 export const DepoimentosHomeWrapper = styled.div`
   background: linear-gradient(#eef1f3 50%, #fff 50%);
   width: 100%;
-  background-color: pink;
 `
 export const DepoimentosHomeContainer = styled.div`
   background-image: linear-gradient(to top, transparent 0%, #e8eaee 100%),
@@ -88,7 +88,7 @@ export const MarkQuote = styled.div`
       transform: rotate(180deg);
     `}
 `
-export const CardReadMore = styled.a`
+export const CardReadMore = styled(Link)`
   color: #003d1d;
   font-size: 16px;
   font-style: normal;
