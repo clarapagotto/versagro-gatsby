@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components"
 
 const GlobalStyles = createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+  @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+  
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -45,18 +50,17 @@ const GlobalStyles = createGlobalStyle`
     border-spacing: 0;
   }
   body {
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-    @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
     font-family: "Roboto", sans-serif;
   }
+
+  /* esconde o elemento do slider que causa o scroll horizontal */
   .slick-slider {
     overflow: hidden!important;
   }
+
+  /* coloca borda em todos os elementos para ajudar a procurar o scroll horizontal */
   /* * {
-    outline: 1px solid red;
-    //
+    outline: 1px solid red; 
   } */
 `
 
