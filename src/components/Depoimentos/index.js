@@ -20,7 +20,7 @@ const DepoimentosHome = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 dignissim, sem eget tincidunt faucibus, ipsum eros tincidunt
                 metus, ut faucibus velit nunc vitae augue. Curabitur hendrerit
-                purus vitae justo... <S.CardReadMore>leia mais</S.CardReadMore>
+                purus vitae justo... <S.CardReadMore to="/cases">leia mais</S.CardReadMore>
               </S.CardText>
               <S.MarkQuote flip="horizontal-vertical">
                 <MarkQuote />
@@ -38,7 +38,7 @@ const DepoimentosHome = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 dignissim, sem eget tincidunt faucibus, ipsum eros tincidunt
                 metus, ut faucibus velit nunc vitae augue. Curabitur hendrerit
-                purus vitae justo... <S.CardReadMore>leia mais</S.CardReadMore>
+                purus vitae justo... <S.CardReadMore to="/cases">leia mais</S.CardReadMore>
               </S.CardText>
               <S.MarkQuote flip="horizontal-vertical">
                 <MarkQuote />

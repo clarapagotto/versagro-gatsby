@@ -1,22 +1,22 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import { Link } from "gatsby"
 
-export const SolutionsHomeWrapper = styled.div`
-  background-color: #eef1f3;
-  height: 1000px;
+export const BlogHomeWrapper = styled.div`
+  background-color: #fff;
+  padding-top: 50px;
   width: 100%;
 `
-export const SolutionsHomeContainer = styled.div`
+export const BlogHomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding-top: 20px;
   width: 80%;
 `
+
 export const Title = styled.h1`
   color: #003d1d;
-  font-family: "Fredoka One", "Roboto", sans-serif;
+  font-family: "Fredoka One", sans-serif;
   font-size: 32px;
   line-height: 40px;
 
@@ -25,61 +25,78 @@ export const Title = styled.h1`
     border-bottom: 4px solid #003d1d;
     display: block;
     padding-top: 5px;
-    width: 50px;    
+    width: 50px;
   }
 `
 
-export const SolutionsCard = styled.div`
+export const CardContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+export const BlogCard = styled.div`
   align-items: center;
-  background: #ffffff;
+  background: #eef1f3;
   border-radius: 20px;
   box-shadow: 0 100px 5px -95px rgba(0, 0, 0, 0.05);
   display: flex;
-  height: 250px;
-  justify-content: space-between;  
+  flex-direction: column;
+  justify-content: center;
   margin-top: 30px;
+  padding-bottom: 20px;
+  width: 32%;
 `
 
 export const ImageCard = styled.div`
-  background: linear-gradient(0.32deg, #003d1d 50%, rgba(0, 61, 29, 0) 90%);
-  border-radius: 0 20px 20px 0;
   box-shadow: 0px 15px 5px -10px rgba(0, 0, 0, 0.25);
   height: 220px;
-
-  ${props =>
-    props.flip === "horizontal" &&
-    css`
-      border-radius: 20px 0 0 20px;
-    `}
+  margin: 0 30px;
 `
 
 export const CardContent = styled.div`
   margin: 0 30px 0 30px;
 `
+
+export const CardTag = styled.p`
+  color: #696969;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-top: 20px;
+`
+
 export const CardTitle = styled.h1`
   color: #003d1d;
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: bold;
-  margin-bottom: 20px;
+  line-height: 36px;
+  margin-top: 10px;
 `
 export const CardDescription = styled.p`
   color: #696969;
   font-size: 16px;
   line-height: 24px;
   text-align: justify;
+  margin-top: 10px;
 `
 export const CardButton = styled(Link)`
+  align-self: center;
   background: #003d1d;
   border-radius: 10px;
   border: none;
   color: #fff;
-  float: right;
+  display: block;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;  
+  font-size: 16px;
   margin-top: 20px;
+  left: calc(50% - 55px);
   padding: 12px 20px;
+  position: relative;
+  text-align: center;
   text-decoration: none;
+  width: 110px;
 
   &:hover,
   &.active {
