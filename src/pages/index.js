@@ -6,6 +6,7 @@ import SEO from "../components/seo"
 import SolutionsHome from "../components/Solutions"
 import DepoimentosHome from "../components/Depoimentos"
 import BlogHome from "../components/Blog"
+import ContatoHome from "../components/ContatoHome"
 
 import HomeSlider from "../components/HomeSlider"
 import { SliderWrapper } from "../components/HomeSlider/styled"
@@ -18,7 +19,8 @@ const IndexPage = () => (
     </SliderWrapper>
     <SolutionsHome />
     <DepoimentosHome /> 
-    <BlogHome />   
+    <BlogHome />
+    <ContatoHome />
   </Layout>
 )
 

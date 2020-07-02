@@ -12,6 +12,8 @@ import {
   SliderDot,
   SlideCaption,
   SlideCaptionContainer,
+  StrongText,
+  SlideCaptionButton
 } from "./styled"
 
 class HomeSlider extends React.Component {
@@ -43,9 +45,10 @@ class HomeSlider extends React.Component {
           <SlideCaptionContainer>
             <SlideCaption>
               Oferecemos <Break />
-              <strong>assistência e consultoria</strong>
-              <Break /> para o <strong>agronegócio</strong>
+              <StrongText>assistência e consultoria</StrongText>
+              <Break /> para o <StrongText>agronegócio</StrongText>
             </SlideCaption>
+            <SlideCaptionButton to="/a-versagro">Conheça a Versagro</SlideCaptionButton>
           </SlideCaptionContainer>
         </div>
         <div>

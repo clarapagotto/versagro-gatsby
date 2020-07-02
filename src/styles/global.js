@@ -51,6 +51,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: "Roboto", sans-serif;
+    background: linear-gradient(#eef1f3 50%, #fff 50%);
   }
 
   /* classes internas do slider */
