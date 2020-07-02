@@ -11,21 +11,21 @@ export const BlogHomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  width: 80%;
+  width: 75%;
 `
 
 export const Title = styled.h1`
   color: #003d1d;
   font-family: "Fredoka One", sans-serif;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 40px;
 
   &:after {
     content: "";
-    border-bottom: 4px solid #003d1d;
+    border-bottom: 3px solid #003d1d;
     display: block;
     padding-top: 5px;
-    width: 50px;
+    width: 60px;
   }
 `
 
@@ -44,13 +44,14 @@ export const BlogCard = styled.div`
   justify-content: center;
   margin-top: 30px;
   padding-bottom: 20px;
-  width: 32%;
+  width: 31.35%;
 `
 
 export const ImageCard = styled.div`
   box-shadow: 0px 15px 5px -10px rgba(0, 0, 0, 0.25);
-  height: 220px;
+  display: block;
   margin: 0 30px;
+  width: 257px;
 `
 
 export const CardContent = styled.div`
@@ -74,7 +75,7 @@ export const CardTitle = styled.h1`
   font-size: 26px;
   font-weight: bold;
   line-height: 36px;
-  margin-top: 10px;
+  margin-top: 20px;
 `
 export const CardDescription = styled.p`
   color: #696969;
@@ -93,12 +94,9 @@ export const CardButton = styled(Link)`
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   margin-top: 20px;
-  /* left: calc(50% - 55px); */
   padding: 12px 20px;
-  /* position: relative; */
   text-align: center;
   text-decoration: none;
-  width: 110px;
 
   &:hover,
   &.active {

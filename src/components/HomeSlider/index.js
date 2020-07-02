@@ -7,7 +7,12 @@ import SliderImage01 from "./SliderImage01"
 import SliderImage02 from "./SliderImage02"
 import SliderImage03 from "./SliderImage03"
 
-import { SliderDot, SlideCaption, SlideCaptionContainer } from "./styled"
+import {
+  Break,
+  SliderDot,
+  SlideCaption,
+  SlideCaptionContainer,
+} from "./styled"
 
 class HomeSlider extends React.Component {
   render() {
@@ -37,7 +42,9 @@ class HomeSlider extends React.Component {
           <SliderImage01 />
           <SlideCaptionContainer>
             <SlideCaption>
-              Oferecemos assistência e consultoria para o agronegócio
+              Oferecemos <Break />
+              <strong>assistência e consultoria</strong>
+              <Break /> para o <strong>agronegócio</strong>
             </SlideCaption>
           </SlideCaptionContainer>
         </div>

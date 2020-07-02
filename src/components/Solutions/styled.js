@@ -12,20 +12,20 @@ export const SolutionsHomeContainer = styled.div`
   justify-content: center;
   margin: auto;
   padding-top: 20px;
-  width: 80%;
+  width: 75%;
 `
 export const Title = styled.h1`
   color: #003d1d;
   font-family: "Fredoka One", "Roboto", sans-serif;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 40px;
 
   &:after {
     content: "";
-    border-bottom: 4px solid #003d1d;
+    border-bottom: 3px solid #003d1d;
     display: block;
     padding-top: 5px;
-    width: 50px;    
+    width: 60px;    
   }
 `
 
@@ -54,7 +54,7 @@ export const ImageCard = styled.div`
 `
 
 export const CardContent = styled.div`
-  margin: 0 30px 0 30px;
+  margin: 0 30px;
 `
 export const CardTitle = styled.h1`
   color: #003d1d;

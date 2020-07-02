@@ -11,7 +11,7 @@ const CoffeeImage = () => {
           relativePath: { eq: "coffee.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 300, maxHeight: 196) {
+            fluid(maxWidth: 257, maxHeight: 168) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -23,7 +23,6 @@ const CoffeeImage = () => {
   return (
     <S.CoffeeImageWrapper
       fluid={coffeeImage.childImageSharp.fluid}
-      style={{ width: "300px" }}
     />
   )
 }

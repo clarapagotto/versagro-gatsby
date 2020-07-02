@@ -11,7 +11,7 @@ const AgricuturalMachineImage = () => {
           relativePath: { eq: "agricultural-machine.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 300, maxHeight: 196) {
+            fluid(maxWidth: 257, maxHeight: 168) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -23,7 +23,6 @@ const AgricuturalMachineImage = () => {
   return (
     <S.AgricuturalMachineImageWrapper
       fluid={agricuturalMachineImage.childImageSharp.fluid}
-      style={{ width: "300px" }}
     />
   )
 }

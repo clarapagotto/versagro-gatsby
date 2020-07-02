@@ -11,7 +11,7 @@ const CornImage = () => {
           relativePath: { eq: "corn.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 300, maxHeight: 196) {
+            fluid(maxWidth: 257, maxHeight: 168) {
               ...GatsbyImageSharpFluid
             }
           }
@@ -23,7 +23,6 @@ const CornImage = () => {
   return (
     <S.CornImageWrapper
       fluid={cornImage.childImageSharp.fluid}
-      style={{ width: "300px" }}
     />
   )
 }

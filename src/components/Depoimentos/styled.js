@@ -7,32 +7,31 @@ export const DepoimentosHomeWrapper = styled.div`
   width: 100%;
 `
 export const DepoimentosHomeContainer = styled.div`
-  background-image: linear-gradient(to top, transparent 0%, #e8eaee 100%),
+  background-image: linear-gradient(to top, transparent -50%, #e8eaee 70%),
     url(${SunsetField});
-  background-position: center;
+  background-position: top;
   border-radius: 50px;
   background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding: 50px 5%;
-  width: 80%;
+  padding: 50px 7.5%;
+  width: 75%;
 `
 
 export const Title = styled.h1`
-  @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
   color: #003d1d;
   font-family: "Fredoka One", sans-serif;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 40px;
 
   &:after {
     content: "";
-    border-bottom: 4px solid #003d1d;
+    border-bottom: 3px solid #003d1d;
     display: block;
     padding-top: 5px;
-    width: 50px;
+    width: 60px;
   }
 `
 
@@ -40,7 +39,7 @@ export const DepoimentosHomeCardContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  margin: 30px 0;
 `
 
 export const DepoimentosHomeCard = styled.div`

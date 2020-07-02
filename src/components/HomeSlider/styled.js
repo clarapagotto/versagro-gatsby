@@ -1,11 +1,14 @@
 import styled from "styled-components"
-import {Link} from 'gatsby'
-import SliderImage01 from '../../images/slider-01.png'
+import { Link } from "gatsby"
+import SliderImage01 from "../../images/slider-01.png"
 
 export const SliderWrapper = styled.div`
   height: 650px;
   width: 100%;
   margin: 0 auto 0;
+`
+
+export const Break = styled.br`
 `
 
 export const SliderDot = styled.div`
@@ -15,24 +18,23 @@ export const SliderDot = styled.div`
   border-radius: 50%;
 
   &:hover {
-    background-color: #B4A734;
-  } 
+    background-color: #b4a734;
+  }
 `
 
-export const SliderLink = styled(Link)`
-`
+export const SliderLink = styled(Link)``
 
 export const SlideCaption = styled.div`
   font-family: Raleway;
-  font-size: 48px;
-  line-height: 56px;
-  color: #FFFFFF;
+  font-size: 36px;
+  line-height: 54px;
+  color: #ffffff;
 `
 export const SlideCaptionContainer = styled.div`
   background-color: orange;
   width: 586px;
   height: 250px;
-  top: 190px;
+  top: 250px;
   /* left: 18px; */
   margin-left: 183px;
 
