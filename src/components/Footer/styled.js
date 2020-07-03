@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 export const FooterWrapper = styled.div`
   position: relative;
-  top: 1482px;
+  /* top: 1482px; */
   width: 100%;
   height: 345px;
   background-color: #003d1d;

@@ -2,7 +2,6 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const BlogHomeWrapper = styled.div`
-  background-color: #fff;
   padding-top: 50px;
   width: 100%;
 `
@@ -36,7 +35,8 @@ export const CardContainer = styled.div`
 
 export const BlogCard = styled.div`
   align-items: center;
-  background: #eef1f3;
+  /* background: #eef1f3; */
+  background: #fff;
   border-radius: 20px;
   box-shadow: 0 100px 5px -95px rgba(0, 0, 0, 0.05);
   display: flex;

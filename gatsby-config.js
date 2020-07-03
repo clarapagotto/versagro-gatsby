@@ -11,7 +11,7 @@ module.exports = {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Raleway', 'Roboto', 'Fredoka One']
+          families: ['Raleway:n4,n7,n8', 'Roboto', 'Fredoka One']
         }
       }
     },

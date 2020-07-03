@@ -1,11 +1,10 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import SliderImage01 from "../../images/slider-01.png"
 
 export const SliderWrapper = styled.div`
   height: 650px;
   width: 100%;
-  margin: 0 auto 0;
+  margin: 0 auto;
 `
 
 export const Break = styled.br`
@@ -24,20 +23,49 @@ export const SliderDot = styled.div`
 
 export const SliderLink = styled(Link)``
 
+export const SlideCaptionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+
+  /* background-color: orange; */
+
+  width: 586px;
+  height: 250px;
+  top: 220px;
+  margin-left: 183px;
+
+  position: absolute;
+  z-index: 2;
+`
+
 export const SlideCaption = styled.div`
   font-family: Raleway;
   font-size: 36px;
   line-height: 54px;
   color: #ffffff;
 `
-export const SlideCaptionContainer = styled.div`
-  background-color: orange;
-  width: 586px;
-  height: 250px;
-  top: 250px;
-  /* left: 18px; */
-  margin-left: 183px;
 
-  position: absolute;
-  z-index: 2;
+export const SlideCaptionButton = styled(Link)`
+  background: rgba(107, 99, 42, 0.8);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  color: #fff;
+  
+  width: 150px;
+
+  font-size: 16px;  
+  margin-top: 20px;
+  padding: 12px 20px;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover,
+  &.active {
+    background: #b4a734;
+  }
+`
+
+export const StrongText = styled.h1`
+  display: inline-block;
+  font-weight: 700;
 `
