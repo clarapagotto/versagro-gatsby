@@ -39,7 +39,7 @@ function Header() {
             </MenuLink>
           </MenuItem>
           <MenuItem>
-            <MenuLink to="/a-versagro" activeClassName="active">
+            <MenuLink to="/a-versagro" activeClassName="active" scroll={scroll}>
               A Versagro
             </MenuLink>
           </MenuItem>

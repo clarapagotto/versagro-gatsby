@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import SunsetField from "../../images/sunset-field.jpg"
 
 export const DepoimentosHomeWrapper = styled.div`
-  /* background: linear-gradient(#eef1f3 50%, #fff 50%); */
+  background: #fff;
   width: 100%;
 `
 export const DepoimentosHomeContainer = styled.div`

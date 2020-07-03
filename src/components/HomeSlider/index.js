@@ -53,9 +53,25 @@ class HomeSlider extends React.Component {
         </div>
         <div>
           <SliderImage02 />
+          <SlideCaptionContainer>
+            <SlideCaption>
+              Soluções <StrongText>corporativas</StrongText> <Break />
+              <StrongText>e tecnológicas para otimizar</StrongText>
+              <Break /> a gestão da sua empresa
+            </SlideCaption>
+            <SlideCaptionButton to="/solucoes">Conheça nossas Soluções</SlideCaptionButton>
+          </SlideCaptionContainer>
         </div>
         <div>
           <SliderImage03 />
+          <SlideCaptionContainer>
+            <SlideCaption>
+              Podemos te ajudar? <Break />
+              Entre em <StrongText>contato</StrongText> com um
+              <Break /><StrongText>consultor especializado</StrongText>
+            </SlideCaption>
+            <SlideCaptionButton to="/contato">Entre em Contato</SlideCaptionButton>
+          </SlideCaptionContainer>
         </div>
       </Slider>
     )

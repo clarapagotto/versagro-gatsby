@@ -13,10 +13,10 @@ export const FooterContainer = styled.div`
   /* background-color: pink; */
 
   display: flex;
-  width: 80%;
+  width: 75%;
   height: 240px;
   margin: 0 auto 104px;
-  border-top: 2px solid #fff;
+  /* border-top: 2px solid #fff; */
 `
 
 export const LogoContainer = styled.div`
@@ -126,14 +126,14 @@ export const AddressText = styled.p`
 
 export const LanguageSelect = styled.select`
   width: 90%;
-  height: 50%;
+  height: 45%;
   background-color: #fff;
-  padding: 20px;
+  padding: 10px 20px;
   border-radius: 18px;
 
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 18px;
   text-align: left;
   color: #969696;

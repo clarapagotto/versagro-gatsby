@@ -13,8 +13,9 @@ export const MenuWrapper = styled.div`
   ${props =>
     props.scroll > 0 &&
     css`
-      background-color: rgba(102, 139, 119, ${props.scroll * (1 / 400)});
-      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+      /* background-color: rgba(74, 138, 104, ${props.scroll * (1 / 400)}); */
+      background-color: rgba(0, 61, 29, ${props.scroll * (1 / 400)});
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
     `}
 
   ${props =>
@@ -33,7 +34,7 @@ export const MenuWrapper = styled.div`
 export const MenuContainer = styled.div`
   display: flex;
   justify-content: space-around;
-  width: 80%;
+  width: 75%;
   margin: 2px auto;
 `
 
@@ -60,14 +61,15 @@ export const MenuLink = styled(Link)`
   font-size: 14px;
   line-height: 20px;
   text-align: center;
-  letter-spacing: 2px;
+  letter-spacing: 1.5px;
 
   padding: 18px 30px;
   color: white;
   text-decoration: none;
 
   &:hover {
-    border-bottom: 4px solid #b4a734;
+    font-weight: bold;
+    border-bottom: 4px solid #8a6d37;
   }
 
   &.active {

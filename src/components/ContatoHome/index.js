@@ -28,12 +28,12 @@ const ContatoHome = () => {
           </InputContainer>
           <InputContainer>
             <Input
-              style={{ marginRight: "5px" }}
+              style={{ marginRight: "7px" }}
               type="email"
               placeholder="E-mail"
             />
             <Input
-              style={{ marginLeft: "5px" }}
+              style={{ marginLeft: "7px" }}
               type="tel"
               placeholder="Telefone"
             />

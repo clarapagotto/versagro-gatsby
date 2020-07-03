@@ -23,7 +23,7 @@ const SolutionsHome = () => {
               purus vitae justo consectetur commodo. Donec ultrices eros ac
               ligula mattis scelerisque.
             </S.CardDescription>
-            <S.CardButton to="/contato">Solicite um orçamento</S.CardButton>
+            <S.CardButton to="/contato">Saiba mais</S.CardButton>
           </S.CardContent>
         </S.SolutionsCard>
         <S.SolutionsCard>
@@ -36,7 +36,7 @@ const SolutionsHome = () => {
               purus vitae justo consectetur commodo. Donec ultrices eros ac
               ligula mattis scelerisque.
             </S.CardDescription>
-            <S.CardButton to="/contato">Solicite um orçamento</S.CardButton>
+            <S.CardButton to="/contato">Saiba mais</S.CardButton>
           </S.CardContent>
           <S.ImageCard flip="horizontal">
             <CornImage />
@@ -55,7 +55,7 @@ const SolutionsHome = () => {
               purus vitae justo consectetur commodo. Donec ultrices eros ac
               ligula mattis scelerisque.
             </S.CardDescription>
-            <S.CardButton to="/contato">Solicite um orçamento</S.CardButton>
+            <S.CardButton to="/contato">Saiba mais</S.CardButton>
           </S.CardContent>
         </S.SolutionsCard>
         <S.SeeMoreButton to="/solucoes">Veja mais Soluções</S.SeeMoreButton>

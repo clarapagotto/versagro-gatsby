@@ -4,7 +4,7 @@ import Logo from "../Logo"
 
 import { Phone } from "@styled-icons/boxicons-solid/Phone"
 import { Email } from "@styled-icons/entypo/Email"
-import { Address } from "@styled-icons/entypo/Address"
+import { LocationOn } from "@styled-icons/material/LocationOn"
 
 const Footer = () => {
   return (
@@ -90,7 +90,7 @@ const Footer = () => {
                 <S.AddressItem>
                   <S.AddressText>Av. Duque de Caxias, 1008, Centro, Viçosa-MG</S.AddressText>
                   <S.IconWrapper>
-                    <Address />
+                    <LocationOn />
                   </S.IconWrapper>
                 </S.AddressItem>
               </S.AddressList>

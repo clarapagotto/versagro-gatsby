@@ -2,7 +2,7 @@ import styled, { css } from "styled-components"
 import { Link } from "gatsby"
 
 export const SolutionsHomeWrapper = styled.div`
-  background-color: #eef1f3;
+  background-color: #fff;
   height: 1000px;
   width: 100%;
 `
@@ -19,6 +19,7 @@ export const Title = styled.h1`
   font-family: "Fredoka One", "Roboto", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  margin-top: 20px;
 
   &:after {
     content: "";
@@ -31,7 +32,7 @@ export const Title = styled.h1`
 
 export const SolutionsCard = styled.div`
   align-items: center;
-  background: #ffffff;
+  background: #efefff;
   border-radius: 20px;
   box-shadow: 0 100px 5px -95px rgba(0, 0, 0, 0.05);
   display: flex;
@@ -43,7 +44,7 @@ export const SolutionsCard = styled.div`
 export const ImageCard = styled.div`
   background: linear-gradient(0.32deg, #003d1d 50%, rgba(0, 61, 29, 0) 90%);
   border-radius: 0 20px 20px 0;
-  box-shadow: 0px 15px 5px -10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 10px 4px -5px rgba(0, 0, 0, 0.2);
   height: 220px;
 
   ${props =>
@@ -59,7 +60,7 @@ export const CardContent = styled.div`
 export const CardTitle = styled.h1`
   color: #003d1d;
   font-family: "Raleway", sans-serif;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: bold;
   margin-bottom: 20px;
 `
@@ -83,7 +84,8 @@ export const CardButton = styled(Link)`
 
   &:hover,
   &.active {
-    background: #b4a734;
+    background: #20804e;
+    transition: 0.4s;
   }
 `
 export const SeeMoreButton = styled(Link)`
@@ -91,7 +93,7 @@ export const SeeMoreButton = styled(Link)`
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  margin-top: 30px;
+  margin: 30px auto 50px auto;
   text-align: center;
   text-decoration: none;
 

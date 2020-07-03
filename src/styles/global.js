@@ -51,7 +51,6 @@ const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(#eef1f3 50%, #fff 50%);
   }
 
   /* classes internas do slider */
@@ -64,7 +63,7 @@ const GlobalStyles = createGlobalStyle`
     }
     .slick-dots {
       /* position: static!important; */
-      bottom: 25px!important;
+      bottom: 20px!important;
     }
     .slick-prev {
       left: 3% !important;
@@ -75,7 +74,7 @@ const GlobalStyles = createGlobalStyle`
       z-index: 1;
     }
     li.slick-active div {
-      background-color: #B4A734!important;
+      background-color: #8A6D37!important;
     } 
   }
 

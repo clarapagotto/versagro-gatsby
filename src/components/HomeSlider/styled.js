@@ -2,13 +2,13 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 export const SliderWrapper = styled.div`
-  height: 650px;
+  height: 100vh;
   width: 100%;
   margin: 0 auto;
+  background-color: pink;
 `
 
-export const Break = styled.br`
-`
+export const Break = styled.br``
 
 export const SliderDot = styled.div`
   background-color: #fff;
@@ -17,7 +17,7 @@ export const SliderDot = styled.div`
   border-radius: 50%;
 
   &:hover {
-    background-color: #b4a734;
+    background-color: #888;
   }
 `
 
@@ -29,10 +29,9 @@ export const SlideCaptionContainer = styled.div`
 
   /* background-color: orange; */
 
-  width: 586px;
   height: 250px;
-  top: 220px;
-  margin-left: 183px;
+  top: 270px;
+  margin-left: 175px;
 
   position: absolute;
   z-index: 2;
@@ -41,27 +40,31 @@ export const SlideCaptionContainer = styled.div`
 export const SlideCaption = styled.div`
   font-family: Raleway;
   font-size: 36px;
-  line-height: 54px;
+  line-height: 50px;
   color: #ffffff;
 `
 
 export const SlideCaptionButton = styled(Link)`
-  background: rgba(107, 99, 42, 0.8);
+  background: rgba(138, 109, 55, 0.8);
   border: 2px solid #fff;
   border-radius: 10px;
   color: #fff;
-  
-  width: 150px;
+  float: left;
 
-  font-size: 16px;  
+  width: 200px;
+
+
+  font-family: Raleway;
+  font-size: 16px;
   margin-top: 20px;
-  padding: 12px 20px;
+  padding: 12px 10px;
   text-decoration: none;
   text-align: center;
 
   &:hover,
   &.active {
-    background: #b4a734;
+    background: #20804e;
+    transition: 0.4s;
   }
 `
 

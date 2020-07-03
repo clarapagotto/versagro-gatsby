@@ -3,22 +3,28 @@ import ContatoImage from "../../images/field.png"
 import { Link } from 'gatsby'
 
 export const ContatoWrapper = styled.div`
-  background-image: linear-gradient(0.22deg, #003D1D 4.81%, rgba(0, 61, 29, 0) 219.53%), url(${ContatoImage});
+  background-image: linear-gradient(0.22deg, #003D1D 0%, rgba(0, 61, 29, 0) 300%), url(${ContatoImage});
+  background-position: top;
+  background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: 400px;
-  margin-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  
 `
 
 export const ContatoContainer = styled.div`
   /* background-color: orange; */
-
+  border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
-  width: 80%;
-  height: 240px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  width: 75%;
+  height: 330px;
 `
 
 export const TextContainer = styled.div`
@@ -29,7 +35,7 @@ export const TextContainer = styled.div`
   justify-content: space-between;
 
   width: 240px;
-  height: 100%;
+  height: 80%;
 
   font-family: Raleway;
 `
@@ -56,7 +62,6 @@ export const FormContainer = styled.div`
   justify-content: space-evenly;
 
   width: 660px;
-  height: 300px;
 
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -68,7 +73,7 @@ export const FormContainer = styled.div`
 
 export const Input = styled.input`
   width: 100%;
-  height: 30px;
+  height: 40px;
   background-color: #fff;
   padding: 5px;
   border-radius: 18px;
@@ -98,9 +103,9 @@ export const InputContainer = styled.div`
 
 export const InputMessage = styled.textarea`
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: #fff;
-  padding: 5px;
+  padding-top: 10px;
   border-radius: 18px;
 
   font-family: inherit;
@@ -127,22 +132,22 @@ export const ButtonContainer = styled.div`
 `
 export const SubmitButton = styled(Link)`
   display: block;
-  background: rgba(107, 99, 42, 0.8);
+  background: rgba(138, 109, 55, 0.8);
   border: 1px solid #fff;
   border-radius: 10px;
   color: #fff;
 
   width: 100px;
 
-  font-family: inherit;
+  font-family: Raleway;
   font-weight: inherit;
-  font-size: 14px;  
-  padding: 6px 10px;
+  font-size: 16px;  
+  padding: 10px 20px;
   text-decoration: none;
   text-align: center;
 
   &:hover,
   &.active {
-    background: #b4a734;
+    background: #20804e;
 }
 `
