@@ -15,7 +15,7 @@ export const MenuWrapper = styled.div`
     css`
       /* background-color: rgba(74, 138, 104, ${props.scroll * (1 / 400)}); */
       background-color: rgba(0, 61, 29, ${props.scroll * (1 / 400)});
-      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
     `}
 
   ${props =>

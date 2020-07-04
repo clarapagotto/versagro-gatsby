@@ -34,7 +34,7 @@ export const SolutionsCard = styled.div`
   align-items: center;
   background: #efefff;
   border-radius: 20px;
-  box-shadow: 0 100px 5px -95px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 100px 5px -95px rgba(0, 0, 0, 0.1);
   display: flex;
   height: 250px;
   justify-content: space-between;  

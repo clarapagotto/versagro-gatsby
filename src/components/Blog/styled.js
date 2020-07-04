@@ -36,9 +36,9 @@ export const CardContainer = styled.div`
 
 export const BlogCard = styled.div`
   align-items: center;
-  background: #eef1f3;
+  background: #efefff;
   border-radius: 20px;
-  box-shadow: 0 10px 5px -5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 20px 5px -15px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
   justify-content: center;
