@@ -27,6 +27,7 @@ export const MenuWrapper = styled.div`
   ${props =>
     props.scroll >= 200 &&
     css`
+      background-color: rgba(0, 61, 29, 1);
       height: 60px;
     `}
 `

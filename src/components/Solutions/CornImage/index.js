@@ -23,7 +23,6 @@ const CornImage = () => {
   return (
     <S.CornImageWrapper
       fluid={cornImage.childImageSharp.fluid}
-      style={{ width: "300px" }}
     />
   )
 }

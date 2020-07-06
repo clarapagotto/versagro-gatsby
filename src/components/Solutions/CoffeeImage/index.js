@@ -23,7 +23,6 @@ const CoffeeImage = () => {
   return (
     <S.CoffeeImageWrapper
       fluid={coffeeImage.childImageSharp.fluid}
-      style={{ width: "300px" }}
     />
   )
 }

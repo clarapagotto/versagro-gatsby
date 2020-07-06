@@ -23,7 +23,6 @@ const AgricuturalMachineImage = () => {
   return (
     <S.AgricuturalMachineImageWrapper
       fluid={agricuturalMachineImage.childImageSharp.fluid}
-      style={{ width: "300px" }}
     />
   )
 }
