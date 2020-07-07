@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import media from "styled-media-query"
 import { Link } from "gatsby"
 
 export const MenuWrapper = styled.div`
@@ -33,17 +34,16 @@ export const MenuWrapper = styled.div`
 `
 
 export const MenuContainer = styled.div`
-  /* background-color: orange; */
-
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
   width: 75%;
   margin: 2px auto;
+
 `
 
 export const LogoLink = styled(Link)`
-  /* background-color: yellow; */
-
+  margin-right: 20px;
   padding-top: 40px;
   width: 262px;
   height: 77px;
@@ -51,34 +51,50 @@ export const LogoLink = styled(Link)`
 
 export const MenuGroup = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
   padding: 0 2px;
+
+  ${media.lessThan("large")`
+
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 100%;
+    background-color: rgba(0, 61, 29, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+
+    &::after{
+      content: " ";
+      height: 40vh;
+    }
+
+    ${props =>
+      props.active === "activeMenu" &&
+      css`
+        transform: translateX(0%);
+      `}
+    
+  `}
 `
 
-// export const MenuItem = styled.div`
-//   width: 120px;
-//   text-align: center;
+export const MenuItem = styled.div`
+  margin: 0 10px;
 
-
-//   padding: 0 2px 0 2px;
-
-//   background-color: pink;
-//   border: 1px solid #fff;
-
-// `
+  ${media.lessThan("large")`
+    width: 100%
+  `}
+`
 
 export const MenuLink = styled(Link)`
   display: block;
-  /* background-color: pink;
-  border: 1px solid #fff; */
-
-  padding: 17px 0 10px;
-
-  width: 120px;
-  height: 28px;
-  text-align: center;
+  padding: 15px 22px;
+  white-space: nowrap;
 
   font-family: "Raleway", sans-serif;
   font-weight: 300;
@@ -86,10 +102,6 @@ export const MenuLink = styled(Link)`
   line-height: 20px;
   text-align: center;
   letter-spacing: 1.5px;
-
-  
-  /* padding: 18px 30px; */
-
   color: white;
   text-decoration: none;
 
@@ -102,6 +114,52 @@ export const MenuLink = styled(Link)`
     font-weight: bold;
     border-bottom: 4px solid #ffff;
   }
+
+  ${media.lessThan("large")`
+    border-bottom: 1px solid #ddd;
+    font-size: 20px;
+    &.active {
+      font-weight: bold;
+      border-bottom: 1px solid #ddd;
+  }
+  `}
+`
+
+export const Burger = styled.div`
+  display: none;
+  margin-bottom: 2px;
+  cursor: pointer;
+
+  ${media.lessThan("large")`
+    display: block;
+  `}
+`
+
+export const BurgerLine = styled.div`
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: #fff;
+  transition: all .3s ease;
+
+
+  ${props =>
+    props.active === "activeLine1" &&
+    css`
+      transform: rotate(-45deg) translate(-5px, 6px);
+    `}
+
+  ${props =>
+    props.active === "activeLine2" &&
+    css`
+      opacity: 0;
+    `}
+
+  ${props =>
+    props.active === "activeLine3" &&
+    css`
+      transform: rotate(45deg) translate(-5px,-6px);
+    `}
 `
 
 // import styled, { css } from "styled-components"
@@ -191,4 +249,3 @@ export const MenuLink = styled(Link)`
 //     border-bottom: 4px solid #ffff;
 //   }
 // `
-

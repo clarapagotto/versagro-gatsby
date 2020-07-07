@@ -5,7 +5,6 @@ export const SliderWrapper = styled.div`
   height: 100vh;
   width: 100%;
   margin: 0 auto;
-  background-color: pink;
 `
 
 export const Break = styled.br``
