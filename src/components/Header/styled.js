@@ -37,7 +37,7 @@ export const MenuContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 80vw;
   margin: 2px auto;
 
 `
@@ -61,11 +61,11 @@ export const MenuGroup = styled.div`
     right: 0px;
     height: 92vh;
     top: 100%;
-    background-color: rgba(0, 61, 29, 1);
+    background-color: #effeff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80vw;
+    width: 70%;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
 
@@ -116,9 +116,10 @@ export const MenuLink = styled(Link)`
   }
 
   ${media.lessThan("large")`
+    color: rgba(0, 61, 29, 1);
     border-bottom: 1px solid #ddd;
     font-size: 20px;
-    &.active {
+    &:hover, &.active {
       font-weight: bold;
       border-bottom: 1px solid #ddd;
   }

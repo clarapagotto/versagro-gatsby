@@ -23,7 +23,6 @@ const SunsetField = () => {
   return (
     <S.SunsetFieldWrapper
       fluid={sunsetField.childImageSharp.fluid}
-      style={{ width: "300px" }}
     />
   )
 }
