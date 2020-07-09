@@ -58,16 +58,18 @@ export const MenuGroup = styled.div`
   ${media.lessThan("large")`
 
     position: absolute;
-    right: 0px;
+    /* right: 0px; */
     height: 92vh;
     top: 100%;
     background-color: #effeff;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 70%;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
+    width: 80vw;
+    /* transform: translateX(100%); */
+    /* transition: transform 0.3s ease-in; */
+    left: 100%;
+    transition: left .3s;
 
     &::after{
       content: " ";
@@ -77,7 +79,8 @@ export const MenuGroup = styled.div`
     ${props =>
       props.active === "activeMenu" &&
       css`
-        transform: translateX(0%);
+        /* transform: translateX(0%); */
+        left: 13vw;
       `}
     
   `}
