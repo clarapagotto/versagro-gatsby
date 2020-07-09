@@ -65,17 +65,11 @@ export const MenuGroup = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-<<<<<<< HEAD
     width: 80vw;
     /* transform: translateX(100%); */
     /* transition: transform 0.3s ease-in; */
     left: 100%;
     transition: left .3s;
-=======
-    width: 70%;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in;
->>>>>>> 6d7b9a121f364639a9c7ea212d8da6394d62a231
 
     &::after{
       content: " ";
