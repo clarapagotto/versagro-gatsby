@@ -6,6 +6,8 @@ export const Nav = styled.nav`
   background: rgba(0, 61, 29, 1);
   height: 80px;
   width: 100%;
+  position: fixed;
+  z-index: 1;
 `
 
 export const NavContainer = styled.div`
@@ -42,6 +44,7 @@ export const NavList = styled.ul`
     margin: 0 25%;
     left: 100%;
     transition: ease-out left .3s;
+    z-index: 99;
 
     ${props =>
       props.active === "activeMenu" &&

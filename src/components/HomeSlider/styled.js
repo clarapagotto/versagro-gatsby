@@ -1,5 +1,60 @@
-import styled from "styled-components"
+import styled, { css } from "styled-components"
+import media from "styled-media-query"
 import { Link } from "gatsby"
+
+export const SlideContainer = styled.div`
+  ${props =>
+    props.image &&
+    css`
+      background-image: url(${props.image});
+    `}
+
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  ${media.lessThan("medium")`
+    height: 90vh;
+  `}
+`
+export const SlideCaptionContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width: 75%;
+  margin-top: 10%;
+  
+  ${media.lessThan("1016px")`
+    width: 90%;
+    margin-top: 20%;
+  `}
+  ${media.lessThan("425px")`
+    margin-top: 30%;
+  `}
+`
+
+export const SlideCaption = styled.h1`
+  font-family: Raleway;
+  font-size: 36px;
+  line-height: 50px;
+  color: #ffffff;
+
+  ${media.lessThan("650px")`
+    font-size: 30px;
+    line-height: 32px;
+  `}
+
+  ${media.lessThan("425px")`
+    font-size: 24px;
+    line-height: 28px;
+  `}
+`
 
 export const SliderWrapper = styled.div`
   height: 100vh;
@@ -22,27 +77,6 @@ export const SliderDot = styled.div`
 
 export const SliderLink = styled(Link)``
 
-export const SlideCaptionContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  /* background-color: orange; */
-
-  height: 250px;
-  top: 270px;
-  margin-left: 175px;
-
-  position: absolute;
-  z-index: 2;
-`
-
-export const SlideCaption = styled.div`
-  font-family: Raleway;
-  font-size: 36px;
-  line-height: 50px;
-  color: #ffffff;
-`
-
 export const SlideCaptionButton = styled(Link)`
   background: rgba(138, 109, 55, 0.8);
   border: 2px solid #fff;
@@ -51,7 +85,6 @@ export const SlideCaptionButton = styled(Link)`
   float: left;
 
   width: 200px;
-
 
   font-family: Raleway;
   font-size: 16px;
@@ -65,6 +98,19 @@ export const SlideCaptionButton = styled(Link)`
     background: #20804e;
     transition: 0.4s;
   }
+
+  ${media.lessThan("650px")`
+    width: 180px;
+    font-size: 14px;
+    margin-top: 25px;
+    padding: 10px 8px;
+  `}
+
+  ${media.lessThan("370px")`
+    width: 150px;
+    font-size: 12px;
+    padding: 8px 6px;
+  `}
 `
 
 export const StrongText = styled.h1`
