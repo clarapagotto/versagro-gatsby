@@ -3,9 +3,9 @@ import Slider from "react-slick"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 
-import SliderImage01 from "./SliderImage01"
-import SliderImage02 from "./SliderImage02"
-import SliderImage03 from "./SliderImage03"
+import SliderImage01 from "../../images/slider-01.png"
+import SliderImage02 from "../../images/slider-02.png"
+import SliderImage03 from "../../images/slider-03.png"
 
 import {
   Break,
@@ -13,7 +13,8 @@ import {
   SlideCaption,
   SlideCaptionContainer,
   StrongText,
-  SlideCaptionButton
+  SlideCaptionButton,
+  SlideContainer,
 } from "./styled"
 
 class HomeSlider extends React.Component {
@@ -41,37 +42,47 @@ class HomeSlider extends React.Component {
     return (
       <Slider {...settings}>
         <div>
-          <SliderImage01 />
-          <SlideCaptionContainer>
-            <SlideCaption>
-              Oferecemos <Break />
-              <StrongText>assistência e consultoria</StrongText>
-              <Break /> para o <StrongText>agronegócio</StrongText>
-            </SlideCaption>
-            <SlideCaptionButton to="/a-versagro">Conheça a Versagro</SlideCaptionButton>
-          </SlideCaptionContainer>
+          <SlideContainer image={SliderImage01}>
+            <SlideCaptionContainer>
+              <SlideCaption>
+                Oferecemos <Break />
+                <StrongText>assistência e consultoria</StrongText>
+                <Break /> para o <StrongText>agronegócio</StrongText>
+              </SlideCaption>
+              <SlideCaptionButton to="/a-versagro">
+                Conheça a Versagro
+              </SlideCaptionButton>
+            </SlideCaptionContainer>
+          </SlideContainer>
         </div>
         <div>
-          <SliderImage02 />
-          <SlideCaptionContainer>
-            <SlideCaption>
-              Soluções <StrongText>corporativas</StrongText> <Break />
-              <StrongText>e tecnológicas para otimizar</StrongText>
-              <Break /> a gestão da sua empresa
-            </SlideCaption>
-            <SlideCaptionButton to="/solucoes">Conheça nossas Soluções</SlideCaptionButton>
-          </SlideCaptionContainer>
+          <SlideContainer image={SliderImage02}>
+            <SlideCaptionContainer>
+              <SlideCaption>
+                Soluções <StrongText>corporativas</StrongText> <Break />
+                <StrongText>e tecnológicas para otimizar</StrongText>
+                <Break /> a gestão da sua empresa
+              </SlideCaption>
+              <SlideCaptionButton to="/solucoes">
+                Conheça nossas Soluções
+              </SlideCaptionButton>
+            </SlideCaptionContainer>
+          </SlideContainer>
         </div>
         <div>
-          <SliderImage03 />
-          <SlideCaptionContainer>
-            <SlideCaption>
-              Podemos te ajudar? <Break />
-              Entre em <StrongText>contato</StrongText> com um
-              <Break /><StrongText>consultor especializado</StrongText>
-            </SlideCaption>
-            <SlideCaptionButton to="/contato">Entre em Contato</SlideCaptionButton>
-          </SlideCaptionContainer>
+          <SlideContainer image={SliderImage03}>
+            <SlideCaptionContainer>
+              <SlideCaption>
+                Podemos te ajudar? <Break />
+                Entre em <StrongText>contato</StrongText> com um
+                <Break />
+                <StrongText>consultor especializado</StrongText>
+              </SlideCaption>
+              <SlideCaptionButton to="/contato">
+                Entre em Contato
+              </SlideCaptionButton>
+            </SlideCaptionContainer>
+          </SlideContainer>
         </div>
       </Slider>
     )
@@ -79,3 +90,42 @@ class HomeSlider extends React.Component {
 }
 
 export default HomeSlider
+
+// {/* <Slider {...settings}>
+// <div>
+//   {/* <SliderImage01 /> */}
+//   <SlideCaptionContainer>
+//     <SlideCaption>
+//       Oferecemos <Break />
+//       <StrongText>assistência e consultoria</StrongText>
+//       <Break /> para o <StrongText>agronegócio</StrongText>
+//     </SlideCaption>
+//     <SlideCaptionButton to="/a-versagro">Conheça a Versagro</SlideCaptionButton>
+//   </SlideCaptionContainer>
+// </div>
+// <div>
+//   <SliderImage02 />
+//   <SlideCaptionContainer>
+//     <SlideCaption>
+//       Soluções <StrongText>corporativas</StrongText> <Break />
+//       <StrongText>e tecnológicas para otimizar</StrongText>
+//       <Break /> a gestão da sua empresa
+//     </SlideCaption>
+//     <SlideCaptionButton to="/solucoes">Conheça nossas Soluções</SlideCaptionButton>
+//   </SlideCaptionContainer>
+// </div>
+// <div>
+//   <SliderImage03 />
+//   <SlideCaptionContainer>
+// <SlideCaption>
+//   Podemos te ajudar? <Break />
+//   Entre em <StrongText>contato</StrongText> com um
+//   <Break /><StrongText>consultor especializado</StrongText>
+// </SlideCaption>
+// <SlideCaptionButton to="/contato">Entre em Contato</SlideCaptionButton>
+//   </SlideCaptionContainer>
+// </div>
+// <div>
+//   <TestContainer />
+// </div>
+// </Slider> */}
