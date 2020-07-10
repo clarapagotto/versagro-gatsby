@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 import { Link } from "gatsby"
 
 export const BlogHomeWrapper = styled.div`
@@ -12,6 +13,16 @@ export const BlogHomeContainer = styled.div`
   justify-content: center;
   margin: auto;
   width: 75%;
+
+  ${media.lessThan("large")`
+    /* screen width is less than 1170px (large) */
+    width: 85%;
+  `}
+
+  ${media.lessThan("medium")`
+    /* screen width is less than 768px (medium) */
+    width: 95%;
+  `}
 `
 
 export const Title = styled.h1`
@@ -27,11 +38,26 @@ export const Title = styled.h1`
     padding-top: 5px;
     width: 60px;
   }
+
+  ${media.lessThan("medium")`
+    /* screen width is less than 768px (medium) */
+    margin-left: 5%;
+  `}
+
+  ${media.lessThan("small")`
+    /* screen width is less than 450px (small) */
+    font-size: 32px;
+  `}
 `
 
 export const CardContainer = styled.div`
   display: flex;
   justify-content: space-between;
+
+  ${media.lessThan("large")`
+    /* screen width is less than 1170px (large) */
+    flex-direction: column;
+  `}
 `
 
 export const BlogCard = styled.div`
@@ -45,19 +71,51 @@ export const BlogCard = styled.div`
   margin-top: 30px;
   padding-bottom: 20px;
   width: 31.35%;
+
+  ${media.lessThan("large")`
+    /* screen width is less than 1170px (large) */
+    background: #fff;
+    border-radius: 0;
+    border-bottom: 1px solid #003d1d;
+    box-shadow: none;
+    flex-direction: row;
+    width: 100%;
+  `}
 `
 
 export const ImageCard = styled.div`
   box-shadow: 0px 15px 5px -10px rgba(0, 0, 0, 0.25);
   display: block;
   margin: 0 30px;
+  height: 168px;
   width: 257px;
+
+  ${media.lessThan("large")`
+    /* screen width is less than 1170px (large) */
+    margin: 0;
+    height: 100%;
+    width: 70%;
+  `}
+
+  ${media.lessThan("950px")`
+    width: 80%;
+  `}
+
+  ${media.lessThan("600px")`
+    display: none;
+  `}
 `
 
 export const CardContent = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 30px;
+
+  ${media.lessThan("large")`
+    /* screen width is less than 1170px (large) */
+    display: block;
+    margin: 0 0 0 30px;
+  `}
 `
 
 export const CardTag = styled.p`
@@ -67,6 +125,10 @@ export const CardTag = styled.p`
   font-weight: bold;
   text-transform: uppercase;
   margin-top: 20px;
+
+  ${media.lessThan("950px")`
+    font-size: 14px;
+  `}
 `
 
 export const CardTitle = styled.h1`
@@ -76,6 +138,11 @@ export const CardTitle = styled.h1`
   font-weight: bold;
   line-height: 36px;
   margin-top: 20px;
+
+  ${media.lessThan("950px")`
+    margin-top: 10px;
+    font-size: 24px;
+  `}
 `
 export const CardDescription = styled.p`
   color: #696969;
@@ -83,6 +150,10 @@ export const CardDescription = styled.p`
   line-height: 24px;
   text-align: justify;
   margin-top: 10px;
+
+  ${media.lessThan("950px")`
+    font-size: 14px;
+  `}
 `
 export const CardButton = styled(Link)`
   align-self: center;
@@ -102,6 +173,15 @@ export const CardButton = styled(Link)`
   &.active {
     background: #b4a734;
   }
+
+  ${media.lessThan("large")`
+    /* screen width is less than 1170px (large) */
+    float: left;        
+  `}
+
+  ${media.lessThan("950px")`
+    font-size: 14px;
+  `}
 `
 export const SeeMoreButton = styled(Link)`
   color: #003d1d;

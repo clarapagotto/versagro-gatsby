@@ -18,11 +18,12 @@ export const DepoimentosHomeContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  padding: 50px 7.5%;
-  width: 75%;
+  padding: 50px 10%;
+  width: 95%;
 
   ${media.lessThan("large")`
     background-position: bottom;
+    padding: 30px 5%;
   `}
 
   ${media.lessThan("medium")`
