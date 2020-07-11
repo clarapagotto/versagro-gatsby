@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import media from "styled-media-query"
 import { Link } from "gatsby"
 
 export const FooterWrapper = styled.div`
@@ -7,6 +8,8 @@ export const FooterWrapper = styled.div`
   width: 100%;
   height: 345px;
   background-color: #003d1d;
+  display: flex;
+  justify-content: center;
 `
 
 export const FooterContainer = styled.div`
@@ -15,8 +18,18 @@ export const FooterContainer = styled.div`
   display: flex;
   width: 75%;
   height: 240px;
-  margin: 0 auto 104px;
   /* border-top: 2px solid #fff; */
+
+  ${media.lessThan("large")`
+    width: 85%;
+  `}
+
+  ${media.lessThan("medium")`
+    flex-direction: column;
+    justify-content: space-between;
+    height: auto;
+    padding-bottom: 40px;
+  `}
 `
 
 export const LogoContainer = styled.div`
@@ -25,7 +38,22 @@ export const LogoContainer = styled.div`
   width: 365px;
   height: 100%;
   padding: 19px 0;
+
+  ${media.lessThan("medium")`
+    display: none;
+  `}
 `
+export const LogoContainerResp = styled.div`
+  display: none;
+
+  ${media.lessThan("medium")`
+    display: block;
+    width: auto;
+    height: 100%;
+    padding: 19px 0;
+  `}
+`
+
 
 export const InfoContainer = styled.div`
   /* background-color: tomato; */
@@ -34,6 +62,13 @@ export const InfoContainer = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
+
+  ${media.lessThan("medium")`
+    padding-top: 0;
+  `}
+  ${media.lessThan("medium")`
+    flex-direction: column;
+  `}
 `
 
 export const LinksContainer = styled.div`
@@ -47,16 +82,25 @@ export const LinksContainer = styled.div`
   line-height: 22px;
   text-align: left;
   color: white;
+
+  ${media.lessThan("medium")`
+    justify-content: space-between;
+  `}
 `
 
 export const LinksGroup = styled.div`
   width: 100%;
   height: 100%;
+
+  ${media.lessThan("medium")`
+    width: auto;
+  `}
 `
 
 export const LinksList = styled.ul`
   display: flex;
   flex-direction: column;
+  padding-right: 15px;
 `
 
 export const LinkItem = styled.li`
@@ -87,6 +131,22 @@ export const SelectContainer = styled.div`
   justify-content: flex-end;
   width: 100%;
   height: 100%;
+
+  ${media.lessThan("medium")`
+    display: none;
+  `}
+`
+
+export const SelectContainerResp = styled.div`
+  display: none;
+
+  ${media.lessThan("medium")`
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  `}
 `
 
 export const AddressContainer = styled.div`
@@ -99,6 +159,14 @@ export const AddressContainer = styled.div`
   line-height: 25px;
   text-align: right;
   color: white;
+
+  ${media.lessThan("medium")`
+    font-size: 12px;
+    line-height: 21px;
+
+    display: flex;
+    justify-content: space-between;
+  `}
 `
 export const AddressList = styled.div`
   display: flex;
@@ -116,7 +184,11 @@ export const AddressItem = styled.div`
 export const IconWrapper = styled.div`
   height: 15px;
   padding: 2px;
-  width: 15px;
+  width: 1em;
+
+  ${media.lessThan("600px")`
+    width: 1.5em;
+  `}
 `
 
 export const AddressText = styled.p`
@@ -141,6 +213,11 @@ export const LanguageSelect = styled.select`
   &:focus {
     outline: none;
   }
+
+  ${media.lessThan("medium")`
+    width: 100%;
+    height: 100%;
+  `}
 `
 
 export const LanguageOption = styled.option`
