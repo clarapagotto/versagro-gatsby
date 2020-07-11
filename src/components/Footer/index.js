@@ -1,6 +1,7 @@
 import React from "react"
 import * as S from "./styled"
 import Logo from "../Logo"
+// import LogoFluid from "../LogoFluid"
 
 import { Phone } from "@styled-icons/boxicons-solid/Phone"
 import { Email } from "@styled-icons/entypo/Email"
@@ -13,6 +14,14 @@ const Footer = () => {
         <S.LogoContainer>
           <Logo />
         </S.LogoContainer>
+        <S.SelectContainerResp>
+          <S.LanguageSelect>
+            <S.LanguageOption>Selecione o idioma</S.LanguageOption>
+            <S.LanguageOption>Português</S.LanguageOption>
+            <S.LanguageOption>English</S.LanguageOption>
+            <S.LanguageOption>Español</S.LanguageOption>
+          </S.LanguageSelect>
+        </S.SelectContainerResp>
         <S.InfoContainer>
           <S.LinksContainer>
             <S.LinksGroup>
@@ -74,6 +83,9 @@ const Footer = () => {
               </S.LanguageSelect>
             </S.SelectContainer>
             <S.AddressContainer>
+              <S.LogoContainerResp>
+                <Logo />
+              </S.LogoContainerResp>
               <S.AddressList>
                 <S.AddressItem>
                   <S.AddressText>+55 12 93456 7890</S.AddressText>
@@ -88,7 +100,9 @@ const Footer = () => {
                   </S.IconWrapper>
                 </S.AddressItem>
                 <S.AddressItem>
-                  <S.AddressText>Av. Duque de Caxias, 1008, Centro, Viçosa-MG</S.AddressText>
+                  <S.AddressText>
+                    Av. Duque de Caxias, 1008, Centro, Viçosa-MG
+                  </S.AddressText>
                   <S.IconWrapper>
                     <LocationOn />
                   </S.IconWrapper>
@@ -97,6 +111,7 @@ const Footer = () => {
             </S.AddressContainer>
           </S.ContactContainer>
         </S.InfoContainer>
+
       </S.FooterContainer>
     </S.FooterWrapper>
   )

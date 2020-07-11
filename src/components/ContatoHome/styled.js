@@ -21,7 +21,7 @@ export const ContatoWrapper = styled.div`
   padding-bottom: 30px;
 
   ${media.lessThan("medium")`
-    padding-top: 0;
+    padding: 0;
   `}
 `
 
