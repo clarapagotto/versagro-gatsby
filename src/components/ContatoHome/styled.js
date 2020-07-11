@@ -1,19 +1,28 @@
-import styled from 'styled-components'
+import styled from "styled-components"
+import media from "styled-media-query"
 import ContatoImage from "../../images/field.png"
-import { Link } from 'gatsby'
+import { Link } from "gatsby"
 
 export const ContatoWrapper = styled.div`
-  background-image: linear-gradient(0.22deg, #003D1D 0%, rgba(0, 61, 29, 0) 300%), url(${ContatoImage});
+  background-image: linear-gradient(
+      0.22deg,
+      #003d1d 0%,
+      rgba(0, 61, 29, 0) 300%
+    ),
+    url(${ContatoImage});
   background-position: top;
   background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 400px;
+  height: 500px;
   padding-top: 30px;
   padding-bottom: 30px;
-  
+
+  ${media.lessThan("medium")`
+    padding-top: 0;
+  `}
 `
 
 export const ContatoContainer = styled.div`
@@ -21,10 +30,29 @@ export const ContatoContainer = styled.div`
   border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
-  padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 30px;
   width: 75%;
-  height: 330px;
+  height: 90%;
+
+  ${media.lessThan("large")`
+    /* screen width is less than 1170px (large) */
+    width: 85%;
+  `}
+
+  ${media.lessThan("medium")`
+    /* screen width is less than 768px (medium) */
+    width: 95%;
+    height: 80%;
+  `}
+
+  ${media.lessThan("1016px")`
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    
+  `}
+
 `
 
 export const TextContainer = styled.div`
@@ -35,9 +63,18 @@ export const TextContainer = styled.div`
   justify-content: space-between;
 
   width: 240px;
-  height: 80%;
+  height: 70%;
+  margin-right: 6px;
 
   font-family: Raleway;
+
+  ${media.lessThan("1016px")`
+    width: 85%;
+  `}
+  ${media.lessThan("medium")`
+    justify-content: space-evenly;
+  `}
+  
 `
 
 export const Title = styled.h1`
@@ -45,6 +82,11 @@ export const Title = styled.h1`
   font-weight: bold;
   line-height: 44px;
   color: #ffffff;
+
+  ${media.lessThan("medium")`
+    font-size: 26px;
+    line-height: 31px;
+  `}
 `
 
 export const Text = styled.h1`
@@ -52,6 +94,16 @@ export const Text = styled.h1`
   line-height: 26px;
   color: #ffffff;
   padding: 0 0 35px;
+
+  ${media.lessThan("1016px")`
+    padding: 0px 0 10px;
+    
+  `}
+
+  ${media.lessThan("medium")`
+    font-size: 16px;
+    line-height: 19px;
+  `}
 `
 
 export const FormContainer = styled.div`
@@ -69,13 +121,18 @@ export const FormContainer = styled.div`
   line-height: 18px;
   text-align: left;
   color: #969696;
+
+  ${media.lessThan("1016px")`
+    width: 85%;
+    
+  `}
 `
 
 export const Input = styled.input`
   width: 100%;
-  height: 40px;
+  height: 35px;
   background-color: #fff;
-  padding: 5px;
+  padding: 4px;
   border-radius: 18px;
 
   border: none;
@@ -93,12 +150,24 @@ export const Input = styled.input`
   &:focus {
     outline: none;
   }
+
+  ${media.lessThan("1016px")`
+    height: 30px;
+  `}
 `
 
 export const InputContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  ${media.lessThan("1016px")`
+    margin: 10px 0;
+  `}
+
+  ${media.lessThan("600px")`
+    margin: 5px 0;
+  `}
 `
 
 export const InputMessage = styled.textarea`
@@ -141,7 +210,7 @@ export const SubmitButton = styled(Link)`
 
   font-family: Raleway;
   font-weight: inherit;
-  font-size: 16px;  
+  font-size: 16px;
   padding: 10px 20px;
   text-decoration: none;
   text-align: center;
@@ -149,5 +218,5 @@ export const SubmitButton = styled(Link)`
   &:hover,
   &.active {
     background: #20804e;
-}
+  }
 `
