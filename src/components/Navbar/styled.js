@@ -3,11 +3,32 @@ import media from "styled-media-query"
 import { Link } from "gatsby"
 
 export const Nav = styled.nav`
-  background: rgba(0, 61, 29, 1);
+  background: transparent;
   height: 80px;
   width: 100%;
   position: fixed;
   z-index: 1;
+
+  ${props => (
+    (props.scroll > 0 && props.scroll < 400) &&
+    css`
+      /* background-color: rgba(74, 138, 104, ${props.scroll * (1 / 400)}); */
+      background-color: rgba(0, 61, 29, ${props.scroll * (1 / 400)});
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
+    `)}
+
+  ${props =>
+    props.scroll < 200 &&
+    css`
+      height: calc(100px - ${props.scroll * (40 / 200)}px);
+    `}
+
+  ${props =>
+    props.scroll >= 200 &&
+    css`
+      height: 60px;
+    `}
+
 `
 
 export const NavContainer = styled.div`
@@ -30,7 +51,6 @@ export const LogoContainer = styled.div`
 `
 
 export const NavList = styled.ul`
-
   ${media.lessThan("802px")`
     display: flex;
     flex-direction: column;
@@ -51,6 +71,18 @@ export const NavList = styled.ul`
       css`
         left: 0;
       `}
+
+  ${props =>
+    props.scroll < 200 &&
+    css`
+      top: calc(100px - ${props.scroll * (40 / 200)}px);
+    `}
+
+  ${props =>
+    props.scroll >= 200 &&
+    css`
+      top: 60px;
+    `}
   `}
 `
 

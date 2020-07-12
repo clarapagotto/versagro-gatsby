@@ -48,6 +48,8 @@ export const LogoContainerResp = styled.div`
   display: none;
 
   ${media.lessThan("medium")`
+    position: relative;
+    right: 0;
     display: block;
     width: 30%;
     min-width: 150px;
@@ -166,6 +168,7 @@ export const AddressContainer = styled.div`
     line-height: 21px;
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
   `}
 `

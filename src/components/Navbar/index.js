@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import {
   Nav,
@@ -12,9 +12,26 @@ import {
 } from "./styled"
 import Logo from "../Logo"
 
-const Navbar = () => {
+function Navbar() {
 
   const [active, setActive] = useState(false)
+  const [scroll, setScroll] = useState(0)
+
+
+  useEffect(() => {
+    window.onscroll = () => {
+      handleScroll()
+    }
+  }, [])
+
+  const handleScroll = () => {
+    if (document.documentElement.scrollTop > 0) {
+      setScroll(document.documentElement.scrollTop)
+    } else {
+      setScroll(0)
+    }
+  }
+
 
   const toggleClassName = () => {
     const currentState = active
@@ -23,12 +40,12 @@ const Navbar = () => {
 
 
   return (
-    <Nav>
+    <Nav scroll={scroll}>
       <NavContainer>
         <LogoContainer>
           <Logo />
         </LogoContainer>
-        <NavList active={active ? 'activeMenu' : null}>
+        <NavList active={active ? 'activeMenu' : null} scroll={scroll}>
           <ListItem>
             <NavLink to="/">Início</NavLink>
           </ListItem>
