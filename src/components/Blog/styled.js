@@ -15,13 +15,11 @@ export const BlogHomeContainer = styled.div`
   width: 75%;
 
   ${media.lessThan("large")`
-    /* screen width is less than 1170px (large) */
     width: 85%;
   `}
 
   ${media.lessThan("medium")`
-    /* screen width is less than 768px (medium) */
-    width: 95%;
+    width: 90%;
   `}
 `
 
@@ -93,15 +91,16 @@ export const ImageCard = styled.div`
   ${media.lessThan("large")`
     /* screen width is less than 1170px (large) */
     margin: 0;
-    height: 100%;
-    width: 70%;
+    height: 200px;
+    width: 50%;
   `}
 
   ${media.lessThan("950px")`
-    width: 80%;
+    height: 250px;
+    width: 100%;
   `}
 
-  ${media.lessThan("600px")`
+  ${media.lessThan("450px")`
     display: none;
   `}
 `
@@ -115,6 +114,10 @@ export const CardContent = styled.div`
     /* screen width is less than 1170px (large) */
     display: block;
     margin: 0 0 0 30px;
+  `}
+
+  ${media.lessThan("medium")`
+    margin: 0 5%;
   `}
 `
 

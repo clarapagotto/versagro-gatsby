@@ -11,7 +11,6 @@ export const ContatoWrapper = styled.div`
     ),
     url(${ContatoImage});
   background-position: top;
-  background-size: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,15 +43,10 @@ export const ContatoContainer = styled.div`
     /* screen width is less than 768px (medium) */
     width: 95%;
     height: 80%;
-  `}
-
-  ${media.lessThan("1016px")`
     flex-direction: column;
     align-items: center;
     padding-top: 0;
-    
   `}
-
 `
 
 export const TextContainer = styled.div`
@@ -68,8 +62,12 @@ export const TextContainer = styled.div`
 
   font-family: Raleway;
 
-  ${media.lessThan("1016px")`
+  ${media.lessThan("large")`
+    margin-right: 5%;
+  `}
+  ${media.lessThan("medium")`
     width: 85%;
+    margin-right: 6px;
   `}
   ${media.lessThan("medium")`
     justify-content: space-evenly;
@@ -95,7 +93,7 @@ export const Text = styled.h1`
   color: #ffffff;
   padding: 0 0 35px;
 
-  ${media.lessThan("1016px")`
+  ${media.lessThan("medium")`
     padding: 0px 0 10px;
     
   `}
@@ -122,7 +120,7 @@ export const FormContainer = styled.div`
   text-align: left;
   color: #969696;
 
-  ${media.lessThan("1016px")`
+  ${media.lessThan("medium")`
     width: 85%;
     
   `}
@@ -151,7 +149,7 @@ export const Input = styled.input`
     outline: none;
   }
 
-  ${media.lessThan("1016px")`
+  ${media.lessThan("medium")`
     height: 30px;
   `}
 `
@@ -161,7 +159,7 @@ export const InputContainer = styled.div`
   display: flex;
   justify-content: space-between;
 
-  ${media.lessThan("1016px")`
+  ${media.lessThan("medium")`
     margin: 10px 0;
   `}
 
@@ -219,4 +217,8 @@ export const SubmitButton = styled(Link)`
   &.active {
     background: #20804e;
   }
+
+  ${media.lessThan("small")`
+    padding: 5px 10px;
+  `}
 `

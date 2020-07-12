@@ -1,7 +1,7 @@
 import React from "react"
 import * as S from "./styled"
-import Logo from "../Logo"
-// import LogoFluid from "../LogoFluid"
+// import Logo from "../Logo"
+import LogoFluid from "../LogoFluid"
 
 import { Phone } from "@styled-icons/boxicons-solid/Phone"
 import { Email } from "@styled-icons/entypo/Email"
@@ -12,7 +12,7 @@ const Footer = () => {
     <S.FooterWrapper>
       <S.FooterContainer>
         <S.LogoContainer>
-          <Logo />
+          <LogoFluid />
         </S.LogoContainer>
         <S.SelectContainerResp>
           <S.LanguageSelect>
@@ -84,7 +84,7 @@ const Footer = () => {
             </S.SelectContainer>
             <S.AddressContainer>
               <S.LogoContainerResp>
-                <Logo />
+                <LogoFluid />
               </S.LogoContainerResp>
               <S.AddressList>
                 <S.AddressItem>

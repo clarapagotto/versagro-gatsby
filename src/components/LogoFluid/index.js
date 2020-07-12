@@ -9,7 +9,7 @@ const LogoFluid = () => {
       query {
         logoImage: file(relativePath: { eq: "Versagro-logo.png" }) {
           childImageSharp {
-            fluid (maxWidth: 127, maxHeight: 37) {
+            fluid (maxWidth: 172, maxHeight: 40) {
               ...GatsbyImageSharpFluid_tracedSVG
             }
           }

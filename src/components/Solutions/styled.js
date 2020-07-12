@@ -91,7 +91,7 @@ export const ImageCard = styled.div`
       border-radius: 20px 0 0 20px;
     `}
 
-  ${media.lessThan("large")`
+  ${media.lessThan("1130px")`
     /* screen width is less than 1170px (large) */
     width: 100%;
   `}

@@ -19,8 +19,8 @@ export const NavContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  ${media.lessThan("1016px")`
-    width: 90%;
+  ${media.lessThan("large")`
+    width: 85%;
   `}
 `
 
@@ -31,7 +31,7 @@ export const LogoContainer = styled.div`
 
 export const NavList = styled.ul`
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("802px")`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,12 +87,12 @@ export const NavLink = styled(Link)`
     border-bottom: 4px solid #ffff;
   }
 
-  ${media.lessThan("869px")`
+  ${media.lessThan("910px")`
     font-size: 12px;
     padding: 7px 10px 25px;
   `}
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("802px")`
     display: block;
     width: 100%;
     color: rgba(0, 61, 29, 1);
@@ -110,7 +110,7 @@ export const Burger = styled.div`
   margin: 26px;
   cursor: pointer;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("802px")`
     display: block;
   `}
 `

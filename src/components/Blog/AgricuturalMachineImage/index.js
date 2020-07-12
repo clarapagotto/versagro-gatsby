@@ -11,7 +11,7 @@ const AgricuturalMachineImage = () => {
           relativePath: { eq: "agricultural-machine.jpg" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 257, maxHeight: 168) {
+            fluid(maxWidth: 257, maxHeight: 257) {
               ...GatsbyImageSharpFluid
             }
           }

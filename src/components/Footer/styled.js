@@ -6,7 +6,7 @@ export const FooterWrapper = styled.div`
   position: relative;
   /* top: 1482px; */
   width: 100%;
-  height: 345px;
+  padding-bottom: 50px;
   background-color: #003d1d;
   display: flex;
   justify-content: center;
@@ -35,9 +35,10 @@ export const FooterContainer = styled.div`
 export const LogoContainer = styled.div`
   /* background-color: yellowgreen; */
 
-  width: 365px;
+  width: 35%;
   height: 100%;
-  padding: 19px 0;
+  padding: 20px 0;
+  margin-right: 40px;
 
   ${media.lessThan("medium")`
     display: none;
@@ -48,8 +49,8 @@ export const LogoContainerResp = styled.div`
 
   ${media.lessThan("medium")`
     display: block;
-    width: auto;
-    height: 100%;
+    width: 30%;
+    min-width: 150px;
     padding: 19px 0;
   `}
 `
@@ -160,7 +161,7 @@ export const AddressContainer = styled.div`
   text-align: right;
   color: white;
 
-  ${media.lessThan("medium")`
+  ${media.lessThan("1016px")`
     font-size: 12px;
     line-height: 21px;
 

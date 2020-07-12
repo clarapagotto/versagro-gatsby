@@ -18,10 +18,6 @@ export const SlideContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  ${media.lessThan("medium")`
-    height: 90vh;
-  `}
 `
 export const SlideCaptionContainer = styled.div`
   display: flex;
@@ -29,13 +25,16 @@ export const SlideCaptionContainer = styled.div`
   height: 50%;
   width: 75%;
   margin-top: 10%;
-  
-  ${media.lessThan("1016px")`
-    width: 90%;
+
+  ${media.lessThan("large")`
+    width: 85%;
     margin-top: 20%;
   `}
-  ${media.lessThan("425px")`
+  ${media.lessThan("medium")`
     margin-top: 30%;
+  `}
+  ${media.lessThan("470px")`
+    margin-top: 60%;
   `}
 `
 
@@ -45,14 +44,19 @@ export const SlideCaption = styled.h1`
   line-height: 50px;
   color: #ffffff;
 
-  ${media.lessThan("650px")`
+  ${media.lessThan("910px")`
     font-size: 30px;
+    line-height: 42px;
+  `}
+
+  ${media.lessThan("470px")`
+    font-size: 24px;
     line-height: 32px;
   `}
 
-  ${media.lessThan("425px")`
-    font-size: 24px;
-    line-height: 28px;
+  ${media.lessThan("388px")`
+    font-size: 20px;
+    line-height: 32px;
   `}
 `
 
@@ -73,6 +77,11 @@ export const SliderDot = styled.div`
   &:hover {
     background-color: #888;
   }
+
+  ${media.lessThan("medium")`
+    height: 10px;
+    width: 10px;
+  `}
 `
 
 export const SliderLink = styled(Link)``
@@ -84,7 +93,7 @@ export const SlideCaptionButton = styled(Link)`
   color: #fff;
   float: left;
 
-  width: 200px;
+  width: 250px;
 
   font-family: Raleway;
   font-size: 16px;
@@ -99,16 +108,16 @@ export const SlideCaptionButton = styled(Link)`
     transition: 0.4s;
   }
 
-  ${media.lessThan("650px")`
-    width: 180px;
+  ${media.lessThan("medium")`
+    border: 1px solid #fff;
+    width: 200px;
     font-size: 14px;
     margin-top: 25px;
     padding: 10px 8px;
   `}
 
-  ${media.lessThan("370px")`
-    width: 150px;
-    font-size: 12px;
+  ${media.lessThan("470px")`
+    margin-top: 15px;
     padding: 8px 6px;
   `}
 `
