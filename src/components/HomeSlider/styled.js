@@ -122,7 +122,7 @@ export const SlideCaptionButton = styled(Link)`
   `}
 `
 
-export const StrongText = styled.h1`
+export const StrongText = styled.p`
   display: inline-block;
   font-weight: 700;
 `

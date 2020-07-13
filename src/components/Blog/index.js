@@ -22,7 +22,7 @@ const BlogHome = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 dignissim, sem eget tincidunt faucibus, ipsum eros tincidunt...
               </S.CardDescription>
-              <S.CardButton>Leia mais</S.CardButton>
+              <S.CardButton to="/">Leia mais</S.CardButton>
             </S.CardContent>
           </S.BlogCard>
           <S.BlogCard>
@@ -50,11 +50,11 @@ const BlogHome = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 dignissim, sem eget tincidunt faucibus, ipsum eros tincidunt...
               </S.CardDescription>
-              <S.CardButton>Leia mais</S.CardButton>
+              <S.CardButton to="/">Leia mais</S.CardButton>
             </S.CardContent>
           </S.BlogCard>
         </S.CardContainer>
-        <S.SeeMoreButton>Veja mais</S.SeeMoreButton>
+        <S.SeeMoreButton to="/">Veja mais</S.SeeMoreButton>
       </S.BlogHomeContainer>
     </S.BlogHomeWrapper>
   )

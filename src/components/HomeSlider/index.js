@@ -33,7 +33,7 @@ class HomeSlider extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 40000,
+      autoplaySpeed: 4000,
       pauseOnHover: false,
       arrows: false,
       className: "slides",
