@@ -32,43 +32,43 @@ const Footer = () => {
                   </S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem>
-                  <S.FooterLink>Quem somos</S.FooterLink>
+                  <S.FooterLink to="/">Quem somos</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem>
-                  <S.FooterLink>Equipe</S.FooterLink>
+                  <S.FooterLink to="/">Equipe</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem>
-                  <S.FooterLink>Onde estamos</S.FooterLink>
+                  <S.FooterLink to="/">Onde estamos</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem style={{ fontWeight: "bold", marginTop: "15px" }}>
-                  <S.FooterLink>Soluções</S.FooterLink>
+                  <S.FooterLink to="/">Soluções</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem>
-                  <S.FooterLink>Servicos</S.FooterLink>
+                  <S.FooterLink to="/">Servicos</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem>
-                  <S.FooterLink>Solicite um orçamento</S.FooterLink>
+                  <S.FooterLink to="/">Solicite um orçamento</S.FooterLink>
                 </S.LinkItem>
               </S.LinksList>
             </S.LinksGroup>
             <S.LinksGroup>
               <S.LinksList>
                 <S.LinkItem>
-                  <S.FooterLink style={{ fontWeight: "bold" }}>
+                  <S.FooterLink to="/"style={{ fontWeight: "bold" }}>
                     Cases
                   </S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem>
-                  <S.FooterLink>Nossos Cases</S.FooterLink>
+                  <S.FooterLink to="/">Nossos Cases</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem>
-                  <S.FooterLink>Depoimentos</S.FooterLink>
+                  <S.FooterLink to="/">Depoimentos</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem style={{ fontWeight: "bold", marginTop: "20px" }}>
-                  <S.FooterLink>Blog</S.FooterLink>
+                  <S.FooterLink to="/">Blog</S.FooterLink>
                 </S.LinkItem>
                 <S.LinkItem style={{ fontWeight: "bold", marginTop: "10px" }}>
-                  <S.FooterLink>Contato</S.FooterLink>
+                  <S.FooterLink to="/">Contato</S.FooterLink>
                 </S.LinkItem>
               </S.LinksList>
             </S.LinksGroup>
