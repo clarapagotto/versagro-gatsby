@@ -14,14 +14,14 @@ const Footer = () => {
         <S.LogoContainer>
           <LogoFluid />
         </S.LogoContainer>
-        <S.SelectContainerResp>
+        {/* <S.SelectContainerResp>
           <S.LanguageSelect>
             <S.LanguageOption>Selecione o idioma</S.LanguageOption>
             <S.LanguageOption>Português</S.LanguageOption>
             <S.LanguageOption>English</S.LanguageOption>
             <S.LanguageOption>Español</S.LanguageOption>
           </S.LanguageSelect>
-        </S.SelectContainerResp>
+        </S.SelectContainerResp> */}
         <S.InfoContainer>
           <S.LinksContainer>
             <S.LinksGroup>

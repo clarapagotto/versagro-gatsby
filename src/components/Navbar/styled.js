@@ -10,7 +10,7 @@ export const Nav = styled.nav`
   z-index: 1;
 
   ${props => (
-    (props.scroll > 0 && props.scroll < 400) &&
+    (props.scroll > 0 && props.scroll < 200) &&
     css`
       /* background-color: rgba(74, 138, 104, ${props.scroll * (1 / 400)}); */
       background-color: rgba(0, 61, 29, ${props.scroll * (1 / 400)});
@@ -26,6 +26,8 @@ export const Nav = styled.nav`
   ${props =>
     props.scroll >= 200 &&
     css`
+      background-color: rgba(0, 61, 29, 1);
+      box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
       height: 60px;
     `}
 

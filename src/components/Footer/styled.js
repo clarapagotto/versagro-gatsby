@@ -28,7 +28,6 @@ export const FooterContainer = styled.div`
     flex-direction: column;
     justify-content: space-between;
     height: auto;
-    padding-bottom: 40px;
   `}
 `
 
@@ -48,18 +47,18 @@ export const LogoContainerResp = styled.div`
   display: none;
 
   ${media.lessThan("medium")`
+    display: inline;
+    text-align: right;
     position: relative;
-    right: 0;
-    display: block;
+    margin-right: 0;
+    float: right; 
     width: 30%;
     min-width: 150px;
     padding: 19px 0;
   `}
 `
 
-
 export const InfoContainer = styled.div`
-  /* background-color: tomato; */
   padding-top: 40px;
 
   display: flex;
@@ -69,7 +68,7 @@ export const InfoContainer = styled.div`
   ${media.lessThan("medium")`
     padding-top: 0;
   `}
-  ${media.lessThan("medium")`
+  ${media.lessThan("small")`
     flex-direction: column;
   `}
 `
@@ -97,6 +96,7 @@ export const LinksGroup = styled.div`
 
   ${media.lessThan("medium")`
     width: auto;
+    margin: 0 7%;
   `}
 `
 
@@ -104,6 +104,15 @@ export const LinksList = styled.ul`
   display: flex;
   flex-direction: column;
   padding-right: 15px;
+
+  ${media.lessThan("medium")`
+    width: auto;
+    padding-right: 10%;
+  `}
+
+  ${media.lessThan("small")`
+    padding-right: 0;
+  `}
 `
 
 export const LinkItem = styled.li`
@@ -136,21 +145,29 @@ export const SelectContainer = styled.div`
   height: 100%;
 
   ${media.lessThan("medium")`
+    height: 40px;
+  `}
+
+  ${media.lessThan("small")`
+    margin-top: 20px;
+  `}  
+
+  /* ${media.lessThan("small")`
     display: none;
-  `}
+  `} */
 `
 
-export const SelectContainerResp = styled.div`
-  display: none;
+// export const SelectContainerResp = styled.div`
+//   display: none;
 
-  ${media.lessThan("medium")`
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  `}
-`
+//   ${media.lessThan("small")`
+//     display: flex;
+//     justify-content: center;
+//     width: 100%;
+//     height: 100%;
+//     margin-bottom: 10px;
+//   `}
+// `
 
 export const AddressContainer = styled.div`
   width: 100%;
@@ -169,7 +186,12 @@ export const AddressContainer = styled.div`
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-end;
+  `}
+
+  ${media.lessThan("small")`
+    align-items: center;
   `}
 `
 export const AddressList = styled.div`
@@ -183,6 +205,15 @@ export const AddressItem = styled.div`
   height: 25px;
   padding: 1px 0;
   display: flex;
+
+  ${media.lessThan("small")`
+    justify-content: center;
+    text-align: center;
+  `}
+
+  ${media.lessThan("small")`
+    flex-direction: row-reverse;
+  `}
 `
 
 export const IconWrapper = styled.div`
