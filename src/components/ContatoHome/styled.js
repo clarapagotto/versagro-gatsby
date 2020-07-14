@@ -70,7 +70,7 @@ export const TextContainer = styled.div`
     margin-right: 6px;
   `}
   ${media.lessThan("medium")`
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
   `}
   
 `
@@ -109,7 +109,8 @@ export const FormContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 10px 0;
 
   width: 660px;
 
