@@ -152,6 +152,7 @@ export const Input = styled.input`
 
   ${media.lessThan("medium")`
     height: 30px;
+    padding: 1px 2px;
   `}
 `
 
