@@ -14,6 +14,11 @@ export const ContatoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  display: -webkit-box;
+    -webkit-box-pack: start; /* justify-content */
+    -webkit-box-align: start; /* align-items */
+
   width: 100%;
   height: 500px;
   padding-top: 30px;
@@ -29,6 +34,10 @@ export const ContatoContainer = styled.div`
   border-bottom: 1px solid #fff;
   display: flex;
   justify-content: space-between;
+
+  display: -webkit-box;
+    -webkit-box-pack: start; /* justify-content */
+
   padding-top: 30px;
   padding-bottom: 30px;
   width: 75%;
