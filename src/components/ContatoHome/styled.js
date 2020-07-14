@@ -11,13 +11,16 @@ export const ContatoWrapper = styled.div`
     ),
     url(${ContatoImage});
   background-position: top;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   display: -webkit-box;
-    -webkit-box-pack: start; /* justify-content */
-    -webkit-box-align: start; /* align-items */
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+
 
   width: 100%;
   height: 500px;
@@ -32,11 +35,12 @@ export const ContatoWrapper = styled.div`
 export const ContatoContainer = styled.div`
   /* background-color: orange; */
   border-bottom: 1px solid #fff;
-  display: flex;
-  justify-content: space-between;
-
   display: -webkit-box;
-    -webkit-box-pack: start; /* justify-content */
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   padding-top: 30px;
   padding-bottom: 30px;
@@ -52,8 +56,13 @@ export const ContatoContainer = styled.div`
     /* screen width is less than 768px (medium) */
     width: 95%;
     height: 80%;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 0;
   `}
 `
@@ -61,9 +70,16 @@ export const ContatoContainer = styled.div`
 export const TextContainer = styled.div`
   /* background-color: yellowgreen; */
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   width: 240px;
   height: 70%;
@@ -116,9 +132,16 @@ export const Text = styled.h1`
 export const FormContainer = styled.div`
   /* background-color: tomato; */
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 10px 0;
 
   width: 660px;
@@ -167,8 +190,12 @@ export const Input = styled.input`
 
 export const InputContainer = styled.div`
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 
   ${media.lessThan("medium")`
     margin: 10px 0;
@@ -205,8 +232,12 @@ export const InputMessage = styled.textarea`
 `
 export const ButtonContainer = styled.div`
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 `
 export const SubmitButton = styled(Link)`
   display: block;
