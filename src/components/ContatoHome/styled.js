@@ -50,13 +50,8 @@ export const ContatoContainer = styled.div`
     /* screen width is less than 768px (medium) */
     width: 95%;
     height: 80%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
     padding-top: 0;
   `}
 `
