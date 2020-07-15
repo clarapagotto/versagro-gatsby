@@ -1,9 +1,10 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import BackgroundImage from 'gatsby-background-image'
 
-import * as S from "./styled"
 
-const SliderImage03 = () => {
+// eslint-disable-next-line react/prop-types
+const SliderImage03 = ({ className, children }) => {
   const { sliderImage03 } = useStaticQuery(
     graphql`
       query {
@@ -11,8 +12,8 @@ const SliderImage03 = () => {
           relativePath: { eq: "slider-03.png" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1366, maxHeight: 768) {
-              ...GatsbyImageSharpFluid
+            fluid(quality: 90, maxWidth: 1366) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
@@ -21,9 +22,17 @@ const SliderImage03 = () => {
   )
 
   return (
-    <S.SliderImage03Wrapper
-      fluid={sliderImage03.childImageSharp.fluid}
-    />
+    <BackgroundImage
+      Tag="section"
+      className={className}
+      fluid={sliderImage03.childImageSharp.fluid} 
+      id="gbitest"
+      role="img"
+      aria-label="gbitest"
+      fadeIn={`soft`}
+    >
+      {children}
+    </BackgroundImage>
   )
 }
 

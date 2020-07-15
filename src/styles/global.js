@@ -82,17 +82,18 @@ const GlobalStyles = createGlobalStyle`
     } 
   }
 
+  textarea,
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"] {
+  -webkit-appearance: none;
+  }
+
   /* coloca borda em todos os elementos para ajudar a procurar o scroll horizontal */
   /* * {
     outline: 1px solid red; 
   } */
 
-  /* :root {
-    font-size: calc(1vw + 1vh + .5vmin);
-  }
-  body {
-    font: 1rem/1.6 sans-serif;
-  } */
 `
 
 export default GlobalStyles

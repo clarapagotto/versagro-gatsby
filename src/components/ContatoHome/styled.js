@@ -14,6 +14,8 @@ export const ContatoWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+
   width: 100%;
   height: 500px;
   padding-top: 30px;
@@ -28,7 +30,12 @@ export const ContatoContainer = styled.div`
   /* background-color: orange; */
   border-bottom: 1px solid #fff;
   display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
   justify-content: space-between;
+
   padding-top: 30px;
   padding-bottom: 30px;
   width: 75%;
@@ -70,7 +77,7 @@ export const TextContainer = styled.div`
     margin-right: 6px;
   `}
   ${media.lessThan("medium")`
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
   `}
   
 `
@@ -109,7 +116,8 @@ export const FormContainer = styled.div`
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 10px 0;
 
   width: 660px;
 
@@ -151,6 +159,7 @@ export const Input = styled.input`
 
   ${media.lessThan("medium")`
     height: 30px;
+    padding: 1px 2px;
   `}
 `
 
@@ -193,6 +202,7 @@ export const InputMessage = styled.textarea`
   }
 `
 export const ButtonContainer = styled.div`
+  
   width: 100%;
   display: flex;
   justify-content: flex-end;
