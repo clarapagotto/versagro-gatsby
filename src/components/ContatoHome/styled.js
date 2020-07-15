@@ -202,9 +202,9 @@ export const InputMessage = styled.textarea`
   }
 `
 export const ButtonContainer = styled.div`
-  display: none;
+  
   width: 100%;
-  /* display: flex; */
+  display: flex;
   justify-content: flex-end;
 `
 export const SubmitButton = styled(Link)`
