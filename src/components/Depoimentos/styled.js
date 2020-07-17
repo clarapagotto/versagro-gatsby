@@ -32,9 +32,8 @@ export const DepoimentosHomeContainer = styled.div`
   `}
 
   ${media.lessThan("small")`
-    background: #fff;
-    padding: 0;
-    width: 95%;
+    border-radius: 20px;
+    width: 100%;
   `}
 `
 
@@ -90,7 +89,6 @@ export const DepoimentosHomeCard = styled.div`
   `}
 
   ${media.lessThan("small")`
-    background: #efefff;
     width: 95%;
   `}
 `

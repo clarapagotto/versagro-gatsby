@@ -114,16 +114,9 @@ export const Text = styled.h1`
 export const FormContainer = styled.div`
   /* background-color: tomato; */
 
-<<<<<<< HEAD
   display: grid;
   gap: 20px;
   justify-content: right;
-=======
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px 0;
->>>>>>> 07911b218e7d7c4d8ff85f66c92b518754a2f8ea
 
   width: 600px;
   height: 35px;
