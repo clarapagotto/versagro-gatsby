@@ -237,6 +237,7 @@ export const LanguageSelect = styled.select`
   background-color: #fff;
   padding: 10px 20px;
   border-radius: 18px;
+  -webkit-appearance:none;
 
   font-family: "Roboto", sans-serif;
   font-weight: 300;

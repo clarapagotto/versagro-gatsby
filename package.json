@@ -10,15 +10,18 @@
   "dependencies": {
     "-": "0.0.1",
     "gatsby": "^2.23.3",
+    "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.4.8",
+<<<<<<< HEAD
     "gatsby-plugin-google-fonts-v2": "0.0.6",
+=======
+>>>>>>> 07911b218e7d7c4d8ff85f66c92b518754a2f8ea
     "gatsby-plugin-manifest": "^2.4.11",
     "gatsby-plugin-offline": "^3.2.9",
     "gatsby-plugin-prefetch-google-fonts": "^1.4.3",
     "gatsby-plugin-react-helmet": "^3.3.4",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-styled-components": "^3.3.4",
-    "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-sharp": "^2.5.5",
     "prop-types": "^15.7.2",

@@ -1,14 +1,12 @@
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import media from "styled-media-query"
 import { Link } from "gatsby"
 
-export const SlideContainer = styled.div`
-  ${props =>
-    props.image &&
-    css`
-      background-image: url(${props.image});
-    `}
+import SliderImage01 from './SliderImage01'
+import SliderImage02 from './SliderImage02'
+import SliderImage03 from './SliderImage03'
 
+export const BackgroundImageContainer01 = styled(SliderImage01)`
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -19,6 +17,46 @@ export const SlideContainer = styled.div`
   justify-content: center;
   align-items: center;
 `
+export const BackgroundImageContainer02 = styled(SliderImage02)`
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+export const BackgroundImageContainer03 = styled(SliderImage03)`
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+// export const SlideContainer = styled.div`
+//   ${props =>
+//     props.image &&
+//     css`
+//       background-image: url(${props.image});
+//     `}
+
+//   width: 100%;
+//   height: 100vh;
+//   background-repeat: no-repeat;
+//   background-position: center center;
+//   background-size: cover;
+
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// `
 export const SlideCaptionContainer = styled.div`
   display: flex;
   flex-direction: column;
