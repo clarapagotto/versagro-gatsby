@@ -8,20 +8,28 @@ module.exports = {
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Raleway', 'Roboto','Fredoka One']
+        }
+      }
+    },
+    {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
       options: {
         fonts: [
           {
             family: `Raleway`,
-            variants: [`400`,`700`,`800`,`900`]
+            variants: [`300`,`400`,`700`,`800`,`900`]
           },
           {
             family: `Roboto`,
-            variants: [`400`,`700`,`800`,`900`],
+            variants: [`300`,`400`,`700`,`800`,`900`],
           },
           {
             family: `Fredoka One`,
-            variants: [`400`,`700`,`800`,`900`],
+            variants: [`300`,`400`,`700`,`800`,`900`],
           },
         ],
       },
