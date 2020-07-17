@@ -107,11 +107,12 @@ export const Text = styled.h1`
 export const FormContainer = styled.div`
   /* background-color: tomato; */
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+  display: grid;
+  gap: 20px;
+  justify-content: right;
 
-  width: 660px;
+  width: 600px;
+  height: 35px;
 
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -120,14 +121,27 @@ export const FormContainer = styled.div`
   text-align: left;
   color: #969696;
 
-  ${media.lessThan("medium")`
-    width: 85%;
+  grid-template-areas:
+    "name name"
+    "email tel"
+    "message message"
+    "button button";
+  grid-template-columns: 20vw 20vw;
+
+  ${media.lessThan("large")`
+  grid-template-columns: 25vw 25vw;
     
+  `}
+
+  ${media.lessThan("medium")`
+    width: 100%;
+    justify-content: center;
+    grid-template-columns: 40vw 40vw;    
   `}
 `
 
 export const Input = styled.input`
-  width: 100%;
+  /* width: 100%; */
   height: 35px;
   background-color: #fff;
   padding: 4px;
@@ -155,17 +169,17 @@ export const Input = styled.input`
 `
 
 export const InputContainer = styled.div`
-  width: 100%;
+  /* width: 100%;
   display: flex;
   justify-content: space-between;
 
   ${media.lessThan("medium")`
-    margin: 10px 0;
-  `}
+     margin: 10px 0;
+   `}
 
   ${media.lessThan("600px")`
-    margin: 5px 0;
-  `}
+     margin: 5px 0;
+   `} */
 `
 
 export const InputMessage = styled.textarea`
@@ -192,17 +206,20 @@ export const InputMessage = styled.textarea`
     outline: none;
   }
 `
+
 export const ButtonContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
 `
 export const SubmitButton = styled(Link)`
+  grid-area: button;
   display: block;
   background: rgba(138, 109, 55, 0.8);
   border: 1px solid #fff;
   border-radius: 10px;
   color: #fff;
+  float: right;
 
   width: 100px;
 

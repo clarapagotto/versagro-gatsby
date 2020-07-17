@@ -24,17 +24,11 @@ export const SlideCaptionContainer = styled.div`
   flex-direction: column;
   height: 50%;
   width: 75%;
-  margin-top: 10%;
+  margin-top: 35vh;
 
   ${media.lessThan("large")`
     width: 85%;
-    margin-top: 20%;
-  `}
-  ${media.lessThan("medium")`
-    margin-top: 30%;
-  `}
-  ${media.lessThan("470px")`
-    margin-top: 60%;
+    margin-top: 50vh;
   `}
 `
 
