@@ -114,19 +114,12 @@ export const Text = styled.h1`
 export const FormContainer = styled.div`
   /* background-color: tomato; */
 
-<<<<<<< HEAD
   display: grid;
   gap: 20px;
   justify-content: right;
-=======
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 10px 0;
->>>>>>> 07911b218e7d7c4d8ff85f66c92b518754a2f8ea
 
   width: 600px;
-  height: 35px;
+  /* height: 35px; */
 
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -139,7 +132,7 @@ export const FormContainer = styled.div`
     "name name"
     "email tel"
     "message message"
-    "button button";
+    ". button";
   grid-template-columns: 20vw 20vw;
 
   ${media.lessThan("large")`
@@ -229,6 +222,7 @@ export const ButtonContainer = styled.div`
   justify-content: flex-end;
 `
 export const SubmitButton = styled(Link)`
+  margin-inline-start: auto;
   grid-area: button;
   display: block;
   background: rgba(138, 109, 55, 0.8);
