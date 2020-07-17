@@ -119,7 +119,7 @@ export const FormContainer = styled.div`
   justify-content: right;
 
   width: 600px;
-  height: 35px;
+  /* height: 35px; */
 
   font-family: "Roboto", sans-serif;
   font-weight: 300;
@@ -132,7 +132,7 @@ export const FormContainer = styled.div`
     "name name"
     "email tel"
     "message message"
-    "button button";
+    ". button";
   grid-template-columns: 20vw 20vw;
 
   ${media.lessThan("large")`
@@ -222,6 +222,7 @@ export const ButtonContainer = styled.div`
   justify-content: flex-end;
 `
 export const SubmitButton = styled(Link)`
+  margin-inline-start: auto;
   grid-area: button;
   display: block;
   background: rgba(138, 109, 55, 0.8);
