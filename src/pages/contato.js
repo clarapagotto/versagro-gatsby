@@ -15,9 +15,9 @@ const ContatoPage = () => {
       {/* <SliderWrapper>
         <HomeSlider />
       </SliderWrapper> */}
-      <h1 style={{ fontSize: '40px' }}>
-          <CountUp start={20} end={1000} duration={2.5} />
-        </h1>
+      <h1 style={{ fontSize: "40px" }}>
+        <CountUp start={20} end={1000} duration={2.5} />
+      </h1>
     </>
   )
 }
