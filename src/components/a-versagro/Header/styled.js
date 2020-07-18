@@ -2,7 +2,7 @@ import styled from "styled-components"
 import media from "styled-media-query"
 import { Link } from "gatsby"
 
-import HeaderImage from "../../images/field.png"
+import HeaderImage from "../../../images/field.png"
 
 export const HeaderWrapper = styled.div`
   background-image: linear-gradient(

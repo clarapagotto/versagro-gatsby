@@ -9,7 +9,7 @@ import {
   Burger,
   BurgerLine
 } from "./styled"
-import Logo from "../Logo"
+import Logo from "../../layout/Logo"
 
 function Header() {
   const [scroll, setScroll] = useState(0)
