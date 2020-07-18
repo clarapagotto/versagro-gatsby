@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components"
 import media from "styled-media-query"
 import { Link } from "gatsby"
-import SunsetField from "../../images/sunset-field.jpg"
+import SunsetField from "../../../images/sunset-field.jpg"
 
 export const DepoimentosHomeWrapper = styled.div`
   background: #fff;

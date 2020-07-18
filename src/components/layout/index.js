@@ -3,9 +3,9 @@ import PropTypes from "prop-types"
 
 import * as S from "./styled"
 import GlobalStyles from "../../styles/global"
-// import Header from '../Header'
-import Navbar from "../Navbar"
-import Footer from "../Footer"
+
+import Navbar from "./Navbar"
+import Footer from "./Footer"
 
 const Layout = ({ children }) => {
   return (

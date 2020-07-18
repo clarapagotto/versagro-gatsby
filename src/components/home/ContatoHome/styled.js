@@ -1,6 +1,6 @@
 import styled from "styled-components"
 import media from "styled-media-query"
-import ContatoImage from "../../images/field.png"
+import ContatoImage from "../../../images/field.png"
 import { Link } from "gatsby"
 
 export const ContatoWrapper = styled.div`

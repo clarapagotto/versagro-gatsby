@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 
-import AVersagroHeader from "../components/AVersagroHeader"
-import AVersagroContent from "../components/AVersagroContent"
+import Header from "../components/a-versagro/Header"
+import SobreNos from "../components/a-versagro/SobreNos"
 
 const AboutPage = () => {
   return (
     <Layout>
-      <AVersagroHeader />
-      <AVersagroContent />
+      <Header />
+      <SobreNos />
     </Layout>
   )
 }
