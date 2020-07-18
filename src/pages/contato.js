@@ -5,15 +5,19 @@ import Navbar from "../components/layout/Navbar"
 import HomeSlider from "../components/home/HomeSlider"
 import { SliderWrapper } from "../components/home/HomeSlider/styled"
 
+import CountUp from "react-countup"
 
 const ContatoPage = () => {
   return (
     <>
       <GlobalStyles />
       <Navbar />
-      <SliderWrapper>
+      {/* <SliderWrapper>
         <HomeSlider />
-      </SliderWrapper>
+      </SliderWrapper> */}
+      <h1 style={{ fontSize: '40px' }}>
+          <CountUp start={20} end={1000} duration={2.5} />
+        </h1>
     </>
   )
 }
