@@ -9,13 +9,14 @@ export const Nav = styled.nav`
   position: fixed;
   z-index: 1;
 
-  ${props => (
-    (props.scroll > 0 && props.scroll < 200) &&
+  ${props =>
+    props.scroll > 0 &&
+    props.scroll < 200 &&
     css`
       /* background-color: rgba(74, 138, 104, ${props.scroll * (1 / 400)}); */
       background-color: rgba(0, 61, 29, ${props.scroll * (1 / 400)});
       box-shadow: 0 6px 6px rgba(0, 0, 0, 0.25);
-    `)}
+    `}
 
   ${props =>
     props.scroll < 200 &&
@@ -53,7 +54,7 @@ export const LogoContainer = styled.div`
 `
 
 export const NavList = styled.ul`
-  ${media.lessThan("802px")`
+  ${media.lessThan("804px")`
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +110,7 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   white-space: nowrap;
 
-  padding: 7px 13px 25px;
+  padding: 7px 13px 18px;
 
   &:hover {
     font-weight: bold;
@@ -123,10 +124,10 @@ export const NavLink = styled(Link)`
 
   ${media.lessThan("910px")`
     font-size: 12px;
-    padding: 7px 10px 25px;
+    padding: 7px 10px 18px;
   `}
 
-  ${media.lessThan("802px")`
+  ${media.lessThan("804px")`
     display: block;
     width: 100%;
     color: rgba(0, 61, 29, 1);
@@ -144,7 +145,7 @@ export const Burger = styled.div`
   margin: 26px;
   cursor: pointer;
 
-  ${media.lessThan("802px")`
+  ${media.lessThan("804px")`
     display: block;
   `}
 `

@@ -1,7 +1,7 @@
 import React from "react"
 import * as S from "./styled"
 
-const AVersagroContent = () => {
+const SobreNos = () => {
   return (
     <S.SobreNosWrapper>
       <S.SobreNosContainer>
@@ -18,9 +18,38 @@ const AVersagroContent = () => {
           amet tortor egestas, volutpat venenatis elit. Sed nec velit eget dolor
           volutpat laoreet a non dolor. Proin auctor viverra tristique.
         </S.Text>
+        <S.CardsContainer>
+          <S.Card>
+            <S.TitleCardContent>
+              <S.TitleCard>Missão</S.TitleCard>
+            </S.TitleCardContent>
+            <S.TextCard>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              ligula nisl, congue sed rutrum id, tincidunt sed ex.
+            </S.TextCard>
+          </S.Card>
+          <S.Card>
+            <S.TitleCardContent>
+              <S.TitleCard>Visão</S.TitleCard>
+            </S.TitleCardContent>
+            <S.TextCard>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+              ligula nisl, congue sed rutrum id, tincidunt sed ex.
+            </S.TextCard>
+          </S.Card>
+          <S.Card>
+            <S.TitleCardContent>
+              <S.TitleCard>Valores</S.TitleCard>
+            </S.TitleCardContent>
+              <S.Item>Lorem ipsum;</S.Item>
+              <S.Item>Lorem ipsum;</S.Item>
+              <S.Item>Lorem ipsum;</S.Item>
+              <S.Item>Lorem ipsum.</S.Item>
+          </S.Card>
+        </S.CardsContainer>
       </S.SobreNosContainer>
     </S.SobreNosWrapper>
   )
 }
 
-export default AVersagroContent
+export default SobreNos
