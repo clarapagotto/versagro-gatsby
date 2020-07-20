@@ -1,9 +1,8 @@
 import React from "react"
 import GlobalStyles from "../styles/global"
+// import Layout from '../components/layout'
 import Navbar from "../components/layout/Navbar"
-
-import HomeSlider from "../components/home/HomeSlider"
-import { SliderWrapper } from "../components/home/HomeSlider/styled"
+// import ContatoHeader from "../components/contato/Header"
 
 import CountUp from "react-countup"
 
