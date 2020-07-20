@@ -6,6 +6,8 @@ import Navbar from "../components/layout/Navbar"
 
 import CountUp from "react-countup"
 
+// import Maps fro../components/a-versagro/OndeEstamosaps'
+
 const ContatoPage = () => {
   return (
     <>
@@ -17,6 +19,7 @@ const ContatoPage = () => {
       <h1 style={{ fontSize: "40px" }}>
         <CountUp start={20} end={1000} duration={2.5} />
       </h1>
+      {/* <Maps /> */}
     </>
   )
 }
